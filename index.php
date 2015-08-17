@@ -53,7 +53,7 @@ include 'includes/head.php';
 			<div class="alert-overlay">
 				<div class="alert-card">
 					<div class="left">
-					I'm sorry but you can't interact with any these chats.
+					I'm sorry but you can't interact with any of these chats.
 					</div>
 					<div class="right">
 						<i class="zmdi zmdi-close"></i>

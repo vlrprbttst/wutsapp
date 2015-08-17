@@ -1,11 +1,12 @@
-
-$(".message").focus(function() {
+var noInteractions = function() {
 	$(".circle-cont i").toggleClass("zmdi-mic zmdi-mail-send");
 	$(this).val('Sorry ;)');
 	$(".chat-window").addClass("alert");
 	$(this).focus;
-});
+}
 
+
+$(".message").focus(noInteractions);
 
 
 $(".zmdi.zmdi-close").click(function() {
@@ -22,7 +23,4 @@ $(".zmdi.zmdi-close").click(function() {
 	$(".message").val('').attr("disabled","disabled").attr("placeholder","Sorry ;)");
 
   });
-	
-	
-	
 }); 

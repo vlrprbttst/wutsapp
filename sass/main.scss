@@ -3,87 +3,12 @@
 @import "partials/_variables.scss";
 @import "partials/_mixin.scss";
 @import "partials/_normalize.scss";
+@import "partials/_animations.scss";
 
-@-webkit-keyframes overlay {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes overlay-reverse {
-  1% {
-    opacity: 1;
-    display: block;
-
-  }
-  99% {
-    display: block;
-    opacity:0;
-  }
-  100% {
-    display: none;
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes card {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    transform:scale(0);
-  }
-  30% {
-    opacity: 1;
-    transform:scale(0);display: block;
-  }
-  
-  85% {
-    transform:scale(1.05);opacity: 1;display: block;
-  }
-  
-  100% {
-    transform:scale(1);opacity: 1;display: block;
-  }
-}
-
-@-webkit-keyframes card-reverse {
-  100% {
-    display: none;
-    opacity: 0;
-  }
-  99% {
-    display: block;
-    opacity: 0;
-    transform:scale(0);
-  }
-  30% {
-    opacity: 1;
-    transform:scale(0);display: block;
-  }
-  
-  1% {
-    transform:scale(1.05);opacity: 1;display: block;
-  }
-  
-  0% {
-    transform:scale(1);opacity: 1;display: block;
-  }
-}
 
 html {
   box-sizing: border-box;
-  height:100%;
+  
 }
  
 *,
@@ -94,18 +19,19 @@ html {
 
 body {
   font-family:$font;
-  height:100%;
-  background-image:url("../images/dist/nexus6.png"), url("../images/dist/bg.png");
+  background-image:url("../images/dist/bg.png");
   background-position:center center;
   background-repeat:no-repeat;
-  background-size:auto, cover;
+  background-size:cover;
 }
 
 .wa {
   &-container {
-    width: 400px;
-    height:711px;
-    @include absolute-center;
+    width: 600px;
+    height:1032px;
+    margin:0 auto;
+    padding:160.5px 100px;
+    background:url("../images/dist/nexus6.png") center center no-repeat;
     
     
     .status-bar {
@@ -204,13 +130,14 @@ body {
       box-shadow:inset 0 10px 10px -10px #000000;
       
       .conversation {
-            width: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
-    height: 516px;
-    padding: 0 16px;
+        width: 100%;
+        overflow:auto;
+        height: 516px;
+        padding: 0 16px;
         @include clearfix;
       }
+      
+      
       .balloon {
         padding:8px;
         position:relative;
