@@ -6,7 +6,6 @@
 <![endif]-->
 <html lang="en">
 	<head>
-
 	<meta charset="utf-8">
 	<title>Whatsapp</title>
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">

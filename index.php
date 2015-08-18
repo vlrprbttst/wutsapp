@@ -2,7 +2,9 @@
 include 'includes/head.php';
 ?>
 <body>
-
+<div id="preloader">
+    <div id="status"></div>
+</div>
 	<?php
 	include 'includes/navigation.php';
 	?>
