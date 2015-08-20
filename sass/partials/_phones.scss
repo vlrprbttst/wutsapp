@@ -1,0 +1,54 @@
+body.nexus6 {
+  
+  .phone {background-image: url("../images/dist/nexus6.png");background-size:auto 799px}
+  
+  .wa-container {
+    width: 382px;
+    height:705px;
+    padding: 17px 0 0 0;
+    
+    .chat-window {height: calc(100% - 135px);}
+  } 
+}
+
+body.s6 {
+  
+  .phone {background-image: url("../images/dist/s6.png");}
+  
+  .wa-container {
+    width: 368px;
+    height:705px;
+    padding: 28px 0 0 0;
+      
+      .chat-window {height: calc(100% - 109px);}
+  }
+  
+  .bottom-bar {
+    display: none;
+  } 
+}
+
+body.nexus5 {
+  
+  .phone {background-image: url("../images/dist/nexus5.png");background-size:auto 782px;}
+  
+  .wa-container {
+    width: 358px;
+    height: 656px;
+      
+    .chat-window {height: calc(100% - 150px);}
+  }
+}
+
+body.motoX {
+  
+  .phone {background-image: url("../images/dist/motox.png");}
+  
+  .wa-container {
+    width: 368px;
+    height: 663px;
+    padding: 17px 0 0 0;
+      
+      .chat-window {height: calc(100% - 120px);}
+  }
+}
