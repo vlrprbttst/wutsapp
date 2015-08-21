@@ -113,7 +113,7 @@ module.exports = function(grunt) {
 					src : ['css/*.css', 'images/*.*', 'js/build/production.min.js', '*.php', 'includes/*.php', '!.sass-cache']
 				},
 				options : {
-					proxy : "localhost/whatsapp",
+					proxy : "localhost/wutsapp",
 					watchTask : true
 				}
 			}
@@ -127,7 +127,7 @@ module.exports = function(grunt) {
 					authKey : 'key1'
 				},
 				src : './',
-				dest : '/www/projects/whatsapp/',
+				dest : '/www/projects/wutsapp/',
 				exclusions : ['.sass-cache', '.git', 'images/src', 'node_modules', '.ftppass', '.gitignore', 'gruntfile.js', 'README.md', 'package.json', 'sass', '_PSD'],
 				//keep : ['blog', 'cv', 'projects', 'prova'],
 				simple : false,
