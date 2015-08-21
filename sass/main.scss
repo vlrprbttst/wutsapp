@@ -422,17 +422,21 @@ body {
 
 $footer-h:45px;
 footer {
-  position:absolute;
+  position:fixed;
   bottom: 0;
   width: 100%;
   height: $footer-h;
-  line-height:$footer-h;
-  background:rgba(0,0,0,.7);
+  line-height:$footer-h; 
   color:#fff;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
   padding:0 10px;
-  font-size:14px;
+  font-size:12px;
+  @include clearfix;
+  
+  i {padding:0 5px 0 0;}
+  
+
   
   a,
   a:visited {
@@ -442,4 +446,16 @@ footer {
   a:hover {
     @include unstyled-link;
   }
+}
+.fb-like {
+    position: relative;
+        top: -4px;
+}
+
+.sharingiscaring {
+  position:fixed;
+  top:20px;
+  left:20px;
+  overflow:visible;
+  z-index:999;
 }

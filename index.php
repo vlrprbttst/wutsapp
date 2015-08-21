@@ -5,6 +5,25 @@ include 'includes/head.php';
 	<div id="preloader">
 		<div id="status"></div>
 	</div>
+	<script>
+		( function(d, s, id) {
+				var js,
+				    fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id))
+					return;
+				js = d.createElement(s);
+				js.id = id;
+				js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<div class="sharingiscaring">
+		<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world" data-size="small" style="padding:0 5px 0 0"> Tweet</a>
+		<div class="fb-like" data-href="http://www.valeriopierbattista.com/projects/whatsapp/index.php" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+	</div>
+	<div id="fb-root"></div>
+
+
 	<?php
 	include 'includes/navigation.php';
 	?>
