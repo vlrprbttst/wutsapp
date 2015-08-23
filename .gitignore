@@ -19,7 +19,6 @@ $RECYCLE.BIN/
 
 .sass-cache
 node_modules
-.grunt
 .ftppass
 
 # =========================
