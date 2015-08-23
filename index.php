@@ -5,24 +5,17 @@ include 'includes/head.php';
 	<div id="preloader">
 		<div id="status"></div>
 	</div>
-	<script>
-		( function(d, s, id) {
-				var js,
-				    fjs = d.getElementsByTagName(s)[0];
-				if (d.getElementById(id))
-					return;
-				js = d.createElement(s);
-				js.id = id;
-				js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
-				fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
-	</script>
 	<div class="sharingiscaring">
 		<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world" data-size="small" style="padding:0 5px 0 0"> Tweet</a>
 		<div class="fb-like" data-href="http://www.valeriopierbattista.com/projects/whatsapp/index.php" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
 	</div>
 	<div id="fb-root"></div>
-
+	<div class="logo">
+		<img src="images/dist/logo.png" alt="wutsapp" />
+		<p>
+			<a href="http://whatsapp.com" target="_blank">Whatsapp</a>-flavoured random instant message non sense
+		</p>
+	</div>
 
 	<?php
 	include 'includes/navigation.php';
@@ -56,7 +49,7 @@ include 'includes/head.php';
 					<img src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" alt="user" />
 				</div>
 				<div class="user-name">
-					<b>Not My Drug Dealer</b>
+					<b>Not My Drug Dealer xxxxxxxxxxxxxxxxxxxxxxxxxx</b>
 					<span>online now</span>
 				</div>
 				<div class="actions more">
