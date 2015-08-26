@@ -1,12 +1,11 @@
 /*jshint unused: vars */
 define([
         'angular',
-        'controllers/chat',
-        'controllers/page'
+        'controllers/page',
+        'controllers/chat'
     ],
     /*deps*/
-    function(angular
-    ) /*invoke*/ {
+    function(angular, PageCtrl, ChatCtrl) /*invoke*/ {
         'use strict';
 
         /**
@@ -19,8 +18,8 @@ define([
          */
         return angular
             .module('wutsapp', [
-                'wutsapp.controllers.ChatCtrl',
                 'wutsapp.controllers.PageCtrl',
+                'wutsapp.controllers.ChatCtrl',
                 /*angJSDeps*/
                 'ngCookies',
                 'ngResource',
@@ -30,23 +29,20 @@ define([
                 'ngTouch'
             ])
             .config(function($routeProvider, $locationProvider) {
-                /*
                 $locationProvider.html5Mode(true);
                 $routeProvider
                     .when('/', {
-                        templateUrl: 'views/home.html',
-                        controller: 'HomeCtrl',
-                        controllerAs: 'home'
-                    })
-                    .when('/content/:contentId?', {
-                        templateUrl: 'views/content.html',
-                        controller: 'ContentCtrl',
-                        controllerAs: 'content'
+                        templateUrl: 'views/chat.html',
+                        controller: 'ChatCtrl',
+                        controllerAs: 'chat'
+                    })                                    
+                    .when('/chat/:id/:slug', {
+                        templateUrl: 'views/chat.html',
+                        controller: 'ChatCtrl',
+                        controllerAs: 'chat'
                     })
                     .otherwise({
                         redirectTo: '/'
                     });
-                */
-
             });
     });

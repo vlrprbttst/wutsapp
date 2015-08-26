@@ -92,6 +92,7 @@ window.twttr = (function(d, s, id) {
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
+/***** ONLOAD *****/
 window.onload = function() {
   document.getElementsByTagName("body")[0].classList.remove("loading");
 };

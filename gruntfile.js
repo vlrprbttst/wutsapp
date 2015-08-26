@@ -7,6 +7,11 @@ module.exports = function(grunt) {
 
     watch: {
 
+      views: {
+        files: ['views/**/*.html'],
+        tasks: ['newer:imagemin']
+      }, // watch images added to src
+
       images: {
         files: ['images/src/**/*.{png,jpg,gif}'],
         tasks: ['newer:imagemin']
