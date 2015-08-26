@@ -7,7 +7,7 @@ body.nexus6 {
     height: 681px;
     padding: 6px 0 0;
     
-    .chat-window {    height: calc(100% - 55px);}
+    .chat-window {height: calc(100% - 55px);}
   }
   
   .wrapperchat {
@@ -24,7 +24,7 @@ body.s6 {
     height: 648px;
     padding: 0;
       
-      .chat-window {    height: calc(100% - -2px);}
+      .chat-window {height: calc(100% - -2px);}
   }
   
   .bottom-bar {
@@ -33,7 +33,7 @@ body.s6 {
 }
 
 body.nexus5 {
-  
+  .wa-container .user-bar .user-name {width: 163px;}
   .phone {background-image: url("../images/dist/nexus5.png");background-size:auto 772px;}
   
   .wa-container {
@@ -41,7 +41,7 @@ body.nexus5 {
     height: 633px;
     margin: -7px auto 0;
       
-    .chat-window {    height: calc(100% - 56px);}
+    .chat-window {height: calc(100% - 56px);}
   }
 }
 
