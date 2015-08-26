@@ -46,9 +46,10 @@
 </head>
 
 <body ng-app="wutsapp" ng-controller="PageCtrl" ng-class="'{{::deviceType}}'" class="loading" >
+	<!-- 
 	<div id="preloader">
 		<div id="status"></div>
-	</div>
+	</div> -->
   <div class="sharingiscaring">
     <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world" data-size="small" style="padding:0 5px 0 0"> Tweet</a>
     <div class="fb-like" data-href="http://www.valeriopierbattista.com/projects/whatsapp/index.php" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
@@ -82,7 +83,7 @@
       </div>
 
       <!-- chat window -->
-      <div ng-controller="ChatCtrl">
+      <div ng-controller="ChatCtrl" class="wrapperchat">
         <div class="user-bar">
           <div class="back">
             <i class="zmdi zmdi-arrow-left"></i>
