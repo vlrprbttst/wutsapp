@@ -4,11 +4,15 @@ body.nexus6 {
   
   .wa-container {
     width: 382px;
-    height:705px;
-    padding: 17px 0 0 0;
+    height: 681px;
+    padding: 6px 0 0;
     
-    .chat-window {height: calc(100% - 135px);}
-  } 
+    .chat-window {    height: calc(100% - 55px);}
+  }
+  
+  .wrapperchat {
+    height: calc(100% - 69px);
+} 
 }
 
 body.s6 {
@@ -17,10 +21,10 @@ body.s6 {
   
   .wa-container {
     width: 368px;
-    height:705px;
-    padding: 28px 0 0 0;
+    height: 648px;
+    padding: 0;
       
-      .chat-window {height: calc(100% - 109px);}
+      .chat-window {    height: calc(100% - -2px);}
   }
   
   .bottom-bar {
@@ -30,13 +34,14 @@ body.s6 {
 
 body.nexus5 {
   
-  .phone {background-image: url("../images/dist/nexus5.png");background-size:auto 782px;}
+  .phone {background-image: url("../images/dist/nexus5.png");background-size:auto 772px;}
   
   .wa-container {
-    width: 358px;
-    height: 656px;
+    width: 353px;
+    height: 633px;
+    margin: -7px auto 0;
       
-    .chat-window {height: calc(100% - 150px);}
+    .chat-window {    height: calc(100% - 56px);}
   }
 }
 
@@ -49,6 +54,10 @@ body.motoX {
     height: 663px;
     padding: 17px 0 0 0;
       
-      .chat-window {height: calc(100% - 120px);}
+      .chat-window {    height: calc(100% - 56px);}
   }
+  
+  .wrapperchat {
+    height: calc(100% - 68px);
+}
 }
