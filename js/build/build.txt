@@ -1,0 +1,15 @@
+
+main.js
+----------------
+angular.js
+controllers/chat.js
+services/device.js
+controllers/page.js
+app.js
+angular-route.js
+angular-cookies.js
+angular-sanitize.js
+angular-resource.js
+angular-animate.js
+angular-touch.js
+main.js

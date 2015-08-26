@@ -1,12 +1,14 @@
 {
-  "name": "grunt-project",
+  "name": "wutsapp",
   "version": "0.1.0",
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
     "grunt": "~0.4.1",
     "grunt-browser-sync": "^1.5.3",
     "grunt-contrib-concat": "~0.5.0",
+    "grunt-contrib-copy": "^0.8.1",
     "grunt-contrib-imagemin": "^0.9.3",
+    "grunt-contrib-requirejs": "^0.4.4",
     "grunt-contrib-sass": "~0.7.4",
     "grunt-contrib-uglify": "~0.5.1",
     "grunt-contrib-watch": "~0.6.1",
@@ -14,6 +16,8 @@
     "grunt-ftpush": "^0.3.3",
     "grunt-newer": "^0.7.0",
     "grunt-penthouse": "^0.2.1",
-    "grunt-postcss": "^0.5.5"
+    "grunt-postcss": "^0.5.5",
+    "grunt-wiredep": "^2.0.0",
+    "load-grunt-tasks": "^3.2.0"
   }
 }
