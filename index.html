@@ -1,0 +1,160 @@
+<!doctype html>
+<!--[if IE 9]>
+<html lang="en" class="ie ie9">
+<![endif]-->
+<!--[if lt IE 9]>
+<html lang="en" class="ie ie-legacy">
+<![endif]-->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Wutsapp</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <meta name="description" content="description">
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+  <!-- facebook -->
+  <meta property="og:url" content="http://www.valeriopierbattista.com/projects/wutsapp/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Whatsapp" />
+  <meta property="og:description" content="Whatsapp conversations generator" />
+  <meta property="og:image" content="http://www.valeriopierbattista.com/projects/wutsapp/images/dist/fb.jpg" />
+  <!-- twitter card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@vlrprbttst">
+  <meta name="twitter:creator" content="@vlrprbttst">
+  <meta name="twitter:title" content="whatsapp">
+  <meta name="twitter:description" content=" whatsapp long description">
+  <meta name="twitter:image" content="http://www.valeriopierbattista.com/projects/wutsapp/images/dist/twt.jpg">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="content-language" content="EN">
+  <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,300" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+  <base href="/">
+
+  <!-- REMOVE -->
+  <style type="text/css">
+      #preloader {
+        display: none;
+      }
+      body.loading #preloader {
+        display: block;
+      }
+  </style>
+</head>
+
+<body ng-app="wutsapp" ng-controller="PageCtrl" ng-class="'{{::deviceType}}'" class="loading" >
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+  <div class="sharingiscaring">
+    <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world" data-size="small" style="padding:0 5px 0 0"> Tweet</a>
+    <div class="fb-like" data-href="http://www.valeriopierbattista.com/projects/whatsapp/index.php" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+  </div>
+  <div id="fb-root"></div>
+  <div class="logo">
+    <img src="images/dist/logo.png" alt="wutsapp" />
+    <p>
+      <a href="http://whatsapp.com" target="_blank">Whatsapp</a>-flavoured random instant message non sense
+    </p>
+  </div>
+  <!-- NAVIGATION HERE -->
+  <div class="phone">
+    <div class="wa-container">
+      <div class="status-bar">
+        <div class="time">
+          15:16
+        </div>
+        <div class="battery">
+          <i class="zmdi zmdi-battery"></i>
+        </div>
+        <div class="network">
+          <i class="zmdi zmdi-network"></i>
+        </div>
+        <div class="wifi">
+          <i class="zmdi zmdi-wifi-alt-2"></i>
+        </div>
+        <div class="star">
+          <i class="zmdi zmdi-star"></i>
+        </div>
+      </div>
+
+      <!-- chat window -->
+      <div ng-controller="ChatCtrl">
+        <div class="user-bar">
+          <div class="back">
+            <i class="zmdi zmdi-arrow-left"></i>
+          </div>
+          <div class="user">
+            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" alt="user" />
+          </div>
+          <div class="user-name">
+            <b>Not My Drug Dealer</b>
+            <span>online now</span>
+          </div>
+          <div class="actions more">
+            <i class="zmdi zmdi-more-vert"></i>
+          </div>
+          <div class="actions attachment">
+            <i class="zmdi zmdi-attachment-alt"></i>
+          </div>
+          <div class="actions">
+            <i class="zmdi zmdi-phone"></i>
+          </div>
+        </div>
+        <div class="chat-window">
+          <div class="alert-overlay">
+            <div class="alert-card">
+              <div class="left">
+                I'm sorry but you can't interact with any of these chats.
+              </div>
+              <div class="right">
+                <i class="zmdi zmdi-close"></i>
+              </div>
+            </div>
+          </div>
+          <div class="conversation">
+            <div class="balloon him">
+              Don't save my name as anything sketchy. <span class="data">21:12</span>
+            </div>
+            <div class="balloon you">
+              Okay man I gotchu <span class="data blue">21:12</span>
+            </div>
+          </div>
+          <!-- conversation -->
+          <div class="textarea">
+            <div class="emoticons"></div>
+            <textarea class="message" name="message" placeholder="Type a message"></textarea>
+            <div class="photo">
+              <i class="zmdi zmdi-camera"></i>
+            </div>
+            <div class="send-mic">
+              <div class="circle-cont">
+                <i class="zmdi zmdi-mic"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-bar">
+        <div class="triangle">
+          <i class="zmdi zmdi-triangle-up"></i>
+        </div>
+        <div>
+          <i class="zmdi zmdi-circle-o"></i>
+        </div>
+        <div>
+          <i class="zmdi zmdi-square-o"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    Developed by <a href="http://valeriopierbattista.com">Valerio Pierbattista</a> and <a href="https://www.linkedin.com/in/patriziomunzi">Patrizio Munzi</a>
+    <br> View source and contribute on <i class="zmdi zmdi-github"></i><a href="https://github.com/vlrprbttst/wutsapp">Github</a>
+  </footer>
+  <script src="js/build/require.js" data-main="js/build/main.js"></script>
+</body>
+
+</html>

@@ -1,154 +1,269 @@
 module.exports = function(grunt) {
 
-	grunt.initConfig({
-		pkg : grunt.file.readJSON('package.json'),
+  require('load-grunt-tasks')(grunt);
 
-		watch : {
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
 
-			images : {
-				files : ['images/src/**/*.{png,jpg,gif}'],
-				tasks : ['newer:imagemin']
-			}, // watch images added to src
+    watch: {
 
-			deleting : {
-				files : ['images/src/*.{png,jpg,gif}'],
-				tasks : ['delete_sync']
-			}, // end of delete sync
+      images: {
+        files: ['images/src/**/*.{png,jpg,gif}'],
+        tasks: ['newer:imagemin']
+      }, // watch images added to src
 
-			scripts : {
-				files : ['js/libs/*.js', 'js/custom/*.js'],
-				tasks : ['concat', 'uglify'],
-				options : {
-					spawn : false,
-				}
-			}, //end of watch scripts
+      deleting: {
+        files: ['images/src/*.{png,jpg,gif}'],
+        tasks: ['delete_sync']
+      }, // end of delete sync
 
-			css : {
-				files : ['sass/**/*.scss'],
-				tasks : ['sass', 'postcss'],
-				options : {
-					spawn : false,
-				}
-			}, //end of sass watch
+      scripts: {
+        files: ['js/custom/**/*.js'],
+        tasks: ['copy:build'],
+        options: {
+          spawn: false,
+        }
+      }, //end of watch scripts
 
-			grunt : {
-				files : ['gruntfile.js']
-			}
-		}, //end of watch
+      css: {
+        files: ['sass/**/*.scss'],
+        tasks: ['sass', 'postcss'],
+        options: {
+          spawn: false,
+        }
+      }, //end of sass watch
 
-		/* ====================================================================================================================================================
-		 * ====================================================================================================================================================
+      grunt: {
+        files: ['gruntfile.js']
+      }
+    }, //end of watch
 
-		 Tasks
+    /* ====================================================================================================================================================
+     * ====================================================================================================================================================
 
-		 ====================================================================================================================================================
-		 ====================================================================================================================================================
-		 */
+     Tasks
 
-		delete_sync : {
-			dist : {
-				cwd : 'images/dist',
-				src : ['**'],
-				syncWith : 'images/src'
-			}
-		}, // end of delete sync
+     ====================================================================================================================================================
+     ====================================================================================================================================================
+     */
 
-		imagemin : {
-			dynamic : {
-				files : [{
-					expand : true, // Enable dynamic expansion
-					cwd : 'images/src/', // source images (not compressed)
-					src : ['**/*.{png,jpg,gif}'], // Actual patterns to match
-					dest : 'images/dist/' // Destination of compressed files
-				}]
-			}
-		}, //end imagemin
+    delete_sync: {
+      dist: {
+        cwd: 'images/dist',
+        src: ['**'],
+        syncWith: 'images/src'
+      }
+    }, // end of delete sync
 
-		concat : {
-			dist : {
-				src : ['js/libs/*.js', 'js/custom/*.js'],
-				dest : 'js/build/production.js'
-			}
-		}, //end concat
+    imagemin: {
+      dynamic: {
+        files: [{
+          expand: true, // Enable dynamic expansion
+          cwd: 'images/src/', // source images (not compressed)
+          src: ['**/*.{png,jpg,gif}'], // Actual patterns to match
+          dest: 'images/dist/' // Destination of compressed files
+        }]
+      }
+    }, //end imagemin
 
-		uglify : {
-			dist : {
-				src : 'js/build/production.js',
-				dest : 'js/build/production.min.js'
-			}
-		}, //end uglify
+    /*
+    concat: {
+      dist: {
+        src: ['js/libs/*.js', 'js/custom/*.js'],
+        dest: 'js/build/production.js'
+      }
+    }, //end concat
 
-		sass : {
-			dist : {
-				options : {
-					style : 'nested', //no need for config.rb
-					compass : 'true'
-				},
-				files : {
-					'css/main.css' : 'sass/main.scss'
-				}
-			}
-		}, //end of sass
+    uglify: {
+      dist: {
+        src: 'js/build/production.js',
+        dest: 'js/build/production.min.js'
+      }
+    }, //end uglify
+    */
 
-		postcss : {
-			options : {
-				map : true,
-				processors : [
-				require('autoprefixer-core')({
-					browsers : 'last 2 version, IE 9'
-				}), // add vendor prefixes. for more: https://github.com/ai/browserslist
-				require('cssnano')() // minify the result
-				]
-			},
-			dist : {
-				src : 'css/main.css'
-			}
-		},
+    sass: {
+      dist: {
+        options: {
+          style: 'nested', //no need for config.rb
+          compass: 'true'
+        },
+        files: {
+          'css/main.css': 'sass/main.scss'
+        }
+      }
+    }, //end of sass
 
+    postcss: {
+      options: {
+        map: true,
+        processors: [
+          require('autoprefixer-core')({
+            browsers: 'last 2 version, IE 9'
+          }), // add vendor prefixes. for more: https://github.com/ai/browserslist
+          require('cssnano')() // minify the result
+        ]
+      },
+      dist: {
+        src: 'css/main.css'
+      }
+    },
 
+    browserSync: {
+      dev: {
+        bsFiles: {
+          src: ['css/*.css', 'images/*.*', 'js/build/*.*', '*.html', '!.sass-cache']
+        },
+        options: {
+          //proxy : "localhost/wutsapp",
+          //proxy: '<%= php.dist.options.hostname %>:<%= php.dist.options.port %>',
+          server: {
+            baseDir: "./",
+            middleware: function(req, res, next) {
+              var fs = require("fs"),
+                  path = require("path"),
+                  url = require("url");
+              var folder = __dirname;
+              var fileName = url.parse(req.url);
+              fileName = fileName.href.split(fileName.search).join("");
+              var fileExists = fs.existsSync(folder + fileName);
+              if (!fileExists && fileName.indexOf("browser-sync-client") < 0) {
+                req.url = "/index.html";
+              }
+              return next();
+            }
+          },
+          watchTask: true
+        }
+      }
+    },
+    /*
+        php: {
+          dist: {
+            options: {
+              hostname: '127.0.0.1',
+              port: 9000,
+              base: '.', // Project root
+              keepalive: false,
+              open: false
+            }
+          }
+        },
+    */
+    ftpush: {
+      build: {
+        auth: {
+          host: 'ftp.valeriopierbattista.com',
+          port: 21,
+          authKey: 'key1'
+        },
+        src: './',
+        dest: '/www/projects/wutsapp/',
+        exclusions: [
+          '.sass-cache',
+          '.git',
+          'images/src',
+          'node_modules',
+          'bower_components',
+          '.ftppass',
+          '.gitignore',
+          'gruntfile.js',
+          'README.md',
+          'package.json',
+          'sass',
+          '_PSD'
+        ],
+        //keep : ['blog', 'cv', 'projects', 'prova'],
+        simple: false,
+        useList: false
+      }
+    },
 
-		browserSync : {
-			dev : {
-				bsFiles : {
-					src : ['css/*.css', 'images/*.*', 'js/build/production.min.js', '*.php', 'includes/*.php', '!.sass-cache']
-				},
-				options : {
-					proxy : "localhost/wutsapp",
-					watchTask : true
-				}
-			}
-		},
+    // Settings for grunt-bower-requirejs
+    bower: {
+      target: {
+        rjsConfig: 'js/custom/require-config.js',
+        options: {
+          exclude: ['requirejs', 'json3', 'es5-shim']
+        }
+      }
+    },
 
-		ftpush : {
-			build : {
-				auth : {
-					host : 'ftp.valeriopierbattista.com',
-					port : 21,
-					authKey : 'key1'
-				},
-				src : './',
-				dest : '/www/projects/wutsapp/',
-				exclusions : ['.sass-cache', '.git', 'images/src', 'node_modules', '.ftppass', '.gitignore', 'gruntfile.js', 'README.md', 'package.json', 'sass', '_PSD'],
-				//keep : ['blog', 'cv', 'projects', 'prova'],
-				simple : false,
-				useList : false
-			}
-		}
-	});
+    // r.js compile config
+    requirejs: {
+      dist: {
+        options: {
+          dir: 'js/build/',
+          modules: [{
+            name: 'main'
+          }],
+          preserveLicenseComments: false, // remove all comments
+          removeCombined: true,
+          baseUrl: 'js/custom/',
+          mainConfigFile: 'js/custom/main.js',
+          optimize: 'uglify2',
+          uglify2: {
+            mangle: false
+          }
+        }
+      }
+    },
 
-	// load npm tasks
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-browser-sync');
-	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-postcss');
-	grunt.loadNpmTasks('grunt-contrib-imagemin');
-	grunt.loadNpmTasks('grunt-newer');
-	grunt.loadNpmTasks('grunt-delete-sync');
-	
-	grunt.loadNpmTasks('grunt-ftpush');
+    copy: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '.',
+          dest: './js/build/',
+          src: ['bower_components/requirejs/require.js'],
+          flatten: true
+        }]
+      },
+      build: {
+        files: [{
+          expand: true,
+          cwd: '.',
+          dest: './js/build/',
+          src: ['bower_components/requirejs/require.js'],
+          flatten: true
+        }, {
+          expand: true,
+          cwd: './js/custom/',
+          dest: './js/build/',
+          src: ['**/*.js'],
+          flatten: false
+        }, ]
+      },
+    }
 
-	// define default task
-	grunt.registerTask('default', ["browserSync", "watch"]);
+  });
+
+  // load npm tasks
+  /*
+  * Not needed anymor because of 'load-grunt-tasks'
+  *
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-postcss');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-newer');
+  grunt.loadNpmTasks('grunt-delete-sync');
+  grunt.loadNpmTasks('grunt-php');
+  grunt.loadNpmTasks('grunt-bower-requirejs');
+  grunt.loadNpmTasks('grunt-contrib-requirejs');
+  grunt.loadNpmTasks('grunt-ftpush');
+  */
+
+  // define default task
+  grunt.registerTask('default', ["copy:build", "browserSync", "watch"]);
+
+  // define dist task
+  grunt.registerTask('dist', ["requirejs:dist", "copy:dist", "browserSync", "watch"]);
+
+  // define dist task
+  grunt.registerTask('ftpush', ["requirejs:dist", "copy:dist"]);
+
 };
