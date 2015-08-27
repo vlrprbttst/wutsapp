@@ -165,6 +165,7 @@ module.exports = function(grunt) {
         dest: '/www/projects/wutsapp/',
         exclusions: [
           '.sass-cache',
+          '.DS_Store',
           '.git',
           'images/src',
           'node_modules',
@@ -244,7 +245,7 @@ module.exports = function(grunt) {
 
   // load npm tasks
   /*
-  * Not needed anymor because of 'load-grunt-tasks'
+  * Not needed anymore because of 'load-grunt-tasks'
   *
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
@@ -252,7 +253,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-postcss');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-imagemin'); 
   grunt.loadNpmTasks('grunt-newer');
   grunt.loadNpmTasks('grunt-delete-sync');
   grunt.loadNpmTasks('grunt-php');
@@ -268,6 +269,6 @@ module.exports = function(grunt) {
   grunt.registerTask('dist', ["requirejs:dist", "copy:dist", "browserSync", "watch"]);
 
   // define dist task
-  grunt.registerTask('ftpush', ["requirejs:dist", "copy:dist"]);
+  grunt.registerTask('ftp', ["requirejs:dist", "copy:dist", "ftpush"]);
 
 };
