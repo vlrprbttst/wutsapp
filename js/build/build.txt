@@ -2,9 +2,12 @@
 main.js
 ----------------
 angular.js
-controllers/chat.js
 services/device.js
+directives/routeloadingindicator.js
 controllers/page.js
+services/chat.js
+services/chatsprovider.js
+controllers/chat.js
 app.js
 angular-route.js
 angular-cookies.js
