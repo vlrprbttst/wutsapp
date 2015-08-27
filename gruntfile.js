@@ -8,8 +8,7 @@ module.exports = function(grunt) {
     watch: {
 
       views: {
-        files: ['views/**/*.html'],
-        tasks: ['newer:imagemin']
+        files: ['views/**/*.html']
       }, // watch images added to src
 
       images: {
@@ -117,7 +116,7 @@ module.exports = function(grunt) {
     browserSync: {
       dev: {
         bsFiles: {
-          src: ['css/*.css', 'images/*.*', 'js/build/*.*', '*.html', '!.sass-cache']
+          src: ['css/*.css', 'images/*.*', 'js/build/*.*', '*.html', 'views/**/*.html','!.sass-cache']
         },
         options: {
           //proxy : "localhost/wutsapp",

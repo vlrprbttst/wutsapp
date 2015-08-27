@@ -21,7 +21,7 @@ define(['angular','services/chat'], function(angular) {
             }, {
                 text: "Okay man I gotchu ",
                 date: "21:12",
-                me: true
+                you: true
             }]);
 
             this.getChat = function(index) {

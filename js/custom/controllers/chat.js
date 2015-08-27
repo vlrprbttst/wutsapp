@@ -9,7 +9,7 @@ define(['angular', 'services/chatsprovider'], function(angular) {
      * Controller of the wutsapp
      */
     angular.module('wutsapp.controllers.ChatCtrl', ['wutsapp.services.ChatsProvider'])
-        .controller('ChatCtrl', function($scope, $routeParams, ChatsProvider) {
+        .controller('ChatCtrl', function($scope, $window, $routeParams, ChatsProvider) {
             $scope.chat = ChatsProvider.getChat();
 
             console.log($routeParams.id);

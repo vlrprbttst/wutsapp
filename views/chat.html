@@ -4,7 +4,7 @@
     </div>
     <!-- user info start -->
     <div class="user">
-        <img src="{{chat.user.image}}" alt="user" />
+        <img ng-src="{{chat.user.image}}" alt="user" />
     </div>
     <div class="user-name">
         <b>{{chat.user.name}}</b>
@@ -34,7 +34,7 @@
     </div>
     <!-- conversation start -->
     <div class="conversation">
-        <div class="balloon " ng-repeat="message in chat.messages" ng-class="message.me ? 'me' : 'him'">
+        <div class="balloon " ng-repeat="message in chat.messages" ng-class="message.you ? 'you' : 'him'">
             {{message.text}}<span class="data">{{message.date}}</span>
         </div>
     </div>

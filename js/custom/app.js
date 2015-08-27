@@ -2,10 +2,11 @@
 define([
         'angular',
         'controllers/page',
-        'controllers/chat'
+        'controllers/chat',
+        'directives/routeloadingindicator'
     ],
     /*deps*/
-    function(angular, PageCtrl, ChatCtrl) /*invoke*/ {
+    function(angular, PageCtrl, ChatCtrl, RouteLoadingIndicator) /*invoke*/ {
         'use strict';
 
         /**
@@ -20,6 +21,7 @@ define([
             .module('wutsapp', [
                 'wutsapp.controllers.PageCtrl',
                 'wutsapp.controllers.ChatCtrl',
+                'wutsapp.directives.RouteLoadingIndicator',
                 /*angJSDeps*/
                 'ngCookies',
                 'ngResource',
@@ -33,13 +35,11 @@ define([
                 $routeProvider
                     .when('/', {
                         templateUrl: 'views/chat.html',
-                        controller: 'ChatCtrl',
-                        controllerAs: 'chat'
+                        controller: 'ChatCtrl'
                     })                                    
                     .when('/chat/:id/:slug', {
                         templateUrl: 'views/chat.html',
-                        controller: 'ChatCtrl',
-                        controllerAs: 'chat'
+                        controller: 'ChatCtrl'
                     })
                     .otherwise({
                         redirectTo: '/'
