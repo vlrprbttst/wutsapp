@@ -35,7 +35,7 @@
     <!-- conversation start -->
     <div class="conversation">
         <div class="balloon " ng-repeat="message in chat.messages" ng-class="message.you ? 'you' : 'him'">
-            {{message.text}}<span class="data">{{message.date}}</span>
+            {{message.text}}<span class="data" ng-class="{'blue': message.you}">{{message.timestamp | date: 'shortTime'}}</span>
         </div>
     </div>
     <!-- conversation end -->

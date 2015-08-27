@@ -3,6 +3,7 @@ define([
         'angular',
         'controllers/page',
         'controllers/chat',
+        'services/chatsprovider',
         'directives/routeloadingindicator'
     ],
     /*deps*/
@@ -21,6 +22,7 @@ define([
             .module('wutsapp', [
                 'wutsapp.controllers.PageCtrl',
                 'wutsapp.controllers.ChatCtrl',
+                'wutsapp.services.ChatsProvider',
                 'wutsapp.directives.RouteLoadingIndicator',
                 /*angJSDeps*/
                 'ngCookies',
@@ -35,11 +37,21 @@ define([
                 $routeProvider
                     .when('/', {
                         templateUrl: 'views/chat.html',
-                        controller: 'ChatCtrl'
+                        controller: 'ChatCtrl',
+                        resolve: {
+                            chat: function($route, ChatsProvider) {
+                                return ChatsProvider.getChat();
+                            }
+                        }
                     })                                    
                     .when('/chat/:id/:slug', {
                         templateUrl: 'views/chat.html',
-                        controller: 'ChatCtrl'
+                        controller: 'ChatCtrl',
+                        resolve: {
+                            chat: function($route, ChatsProvider) {
+                                return ChatsProvider.getChat($route.current.params.id - 1);
+                            }
+                        }
                     })
                     .otherwise({
                         redirectTo: '/'

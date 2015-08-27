@@ -1,4 +1,4 @@
-define(['angular', 'services/chatsprovider'], function(angular) {
+define(['angular', 'services/chatprovider'], function(angular) {
     'use strict';
 
     /**
@@ -9,11 +9,28 @@ define(['angular', 'services/chatsprovider'], function(angular) {
      * Controller of the wutsapp
      */
     angular.module('wutsapp.controllers.ChatCtrl', ['wutsapp.services.ChatsProvider'])
-        .controller('ChatCtrl', function($scope, $window, $routeParams, ChatsProvider) {
-            $scope.chat = ChatsProvider.getChat();
+        .controller('ChatCtrl', function($scope, $rootScope, $location, $q, chat, ChatsProvider) {
+            if (!chat) {
+                $location.path("/");
+                return;
+            }
+            $scope.chat = chat;
 
-            console.log($routeParams.id);
-            console.log($routeParams.slug);
+            var assureNewChat = $q(function(resolve, reject) {
+                function getNewChat() {
+                    ChatsProvider.getChat().then(function(chat) {
+                        if (chat.url != $scope.chat.url) {
+                            resolve(chat);
+                            return;
+                        }
+                        getNewChat();
+                    });
+                }
+                getNewChat();
+            });
 
+            assureNewChat.then(function(chat) {
+              $rootScope.newChatUrl = "/chat" + chat.url;
+            });
         });
 });
