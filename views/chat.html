@@ -1,54 +1,54 @@
 <div class="user-bar">
-  <div class="back">
-    <i class="zmdi zmdi-arrow-left"></i>
-  </div>
-  <div class="user">
-    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" alt="user" />
-  </div>
-  <div class="user-name">
-    <b>Not My Drug Dealer</b>
-    <span>online now</span>
-  </div>
-  <div class="actions more">
-    <i class="zmdi zmdi-more-vert"></i>
-  </div>
-  <div class="actions attachment">
-    <i class="zmdi zmdi-attachment-alt"></i>
-  </div>
-  <div class="actions">
-    <i class="zmdi zmdi-phone"></i>
-  </div>
+    <div class="back">
+        <i class="zmdi zmdi-arrow-left"></i>
+    </div>
+    <!-- user info start -->
+    <div class="user">
+        <img ng-src="{{chat.user.image}}" alt="user" />
+    </div>
+    <div class="user-name">
+        <b>{{chat.user.name}}</b>
+        <span>{{chat.user.status}}</span>
+    </div>
+    <!-- user info end -->
+    <div class="actions more">
+        <i class="zmdi zmdi-more-vert"></i>
+    </div>
+    <div class="actions attachment">
+        <i class="zmdi zmdi-attachment-alt"></i>
+    </div>
+    <div class="actions">
+        <i class="zmdi zmdi-phone"></i>
+    </div>
 </div>
 <div class="chat-window">
-  <div class="alert-overlay">
-    <div class="alert-card">
-      <div class="left">
-        I'm sorry but you can't interact with any of these chats.
-      </div>
-      <div class="right">
-        <i class="zmdi zmdi-close"></i>
-      </div>
+    <div class="alert-overlay">
+        <div class="alert-card">
+            <div class="left">
+                I'm sorry but you can't interact with any of these chats.
+            </div>
+            <div class="right">
+                <i class="zmdi zmdi-close"></i>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="conversation">
-    <div class="balloon him">
-      Don't save my name as anything sketchy. <span class="data">21:12</span>
+    <!-- conversation start -->
+    <div class="conversation">
+        <div class="balloon " ng-repeat="message in chat.messages" ng-class="message.you ? 'you' : 'him'">
+            {{message.text}}<span class="data">{{message.date}}</span>
+        </div>
     </div>
-    <div class="balloon you">
-      Okay man I gotchu <span class="data blue">21:12</span>
+    <!-- conversation end -->
+    <div class="textarea">
+        <div class="emoticons"></div>
+        <textarea class="message" name="message" placeholder="Type a message"></textarea>
+        <div class="photo">
+            <i class="zmdi zmdi-camera"></i>
+        </div>
+        <div class="send-mic">
+            <div class="circle-cont">
+                <i class="zmdi zmdi-mic"></i>
+            </div>
+        </div>
     </div>
-  </div>
-  <!-- conversation -->
-  <div class="textarea">
-    <div class="emoticons"></div>
-    <textarea class="message" name="message" placeholder="Type a message"></textarea>
-    <div class="photo">
-      <i class="zmdi zmdi-camera"></i>
-    </div>
-    <div class="send-mic">
-      <div class="circle-cont">
-        <i class="zmdi zmdi-mic"></i>
-      </div>
-    </div>
-  </div>
 </div>

@@ -1,4 +1,4 @@
-define(['angular', 'services/device'], function(angular) {
+define(['angular', 'services/device', 'directives/routeloadingindicator'], function(angular) {
   'use strict';
 
   /**
@@ -8,7 +8,7 @@ define(['angular', 'services/device'], function(angular) {
    * # HomeCtrl
    * Controller of the wutsapp
    */
-  angular.module('wutsapp.controllers.PageCtrl', ['wutsapp.services.Device'])
+  angular.module('wutsapp.controllers.PageCtrl', ['wutsapp.services.Device', 'wutsapp.directives.RouteLoadingIndicator'])
     .controller('PageCtrl', function($scope, $window, Device) {
       $scope.deviceType = Device.get();
     });
