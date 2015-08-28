@@ -39,38 +39,41 @@ require(['angular', 'app', 'angular-route', 'angular-cookies', 'angular-sanitize
 
 /***** TWITTER *****/
 window.twttr = ( function(d, s, id) {
-		var js,
-		    fjs = d.getElementsByTagName(s)[0],
-		    t = window.twttr || {};
-		if (d.getElementById(id))
-			return t;
-		js = d.createElement(s);
-		js.id = id;
-		js.src = "https://platform.twitter.com/widgets.js";
-		fjs.parentNode.insertBefore(js, fjs);
-
-		t._e = [];
-		t.ready = function(f) {
-			t._e.push(f);
-		};
-
+	var js,
+	    fjs = d.getElementsByTagName(s)[0],
+	    t = window.twttr || {};
+	if (d.getElementById(id))
 		return t;
-	}(document, "script", "twitter-wjs"));
+	js = d.createElement(s);
+	js.id = id;
+	js.src = "https://platform.twitter.com/widgets.js";
+	fjs.parentNode.insertBefore(js, fjs);
+
+	t._e = [];
+	t.ready = function(f) {
+		t._e.push(f);
+	};
+
+	return t;
+}(document, "script", "twitter-wjs"));
 
 /***** FACEBOOK *****/
-( function(d, s, id) {
-		var js,
-		    fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id))
-			return;
-		js = d.createElement(s);
-		js.id = id;
-		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
-		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));
+(function(d, s, id) {
+	var js,
+	    fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id))
+		return;
+	js = d.createElement(s);
+	js.id = id;
+	js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+
+
 
 /***** ONLOAD *****/
-!function() {
+(function() {
 	window.onload = function() {
 		document.getElementsByTagName("body")[0].classList.remove("loading");
 	};
@@ -82,4 +85,4 @@ window.twttr = ( function(d, s, id) {
 	preloaderElem.addEventListener("webkitanimationEnd", preloaderAnimationEndCallback, false);
 	preloaderElem.addEventListener("oanimationEnd", preloaderAnimationEndCallback, false);
 	preloaderElem.addEventListener("MSanimationEnd", preloaderAnimationEndCallback, false);
-}();
+}());

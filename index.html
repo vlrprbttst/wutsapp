@@ -34,7 +34,7 @@
     <base href="/">
 </head>
 
-<body ng-app="wutsapp" ng-controller="PageCtrl" ng-cloak ng-class="'{{::deviceType}}'" class="loading">
+<body ng-app="wutsapp" ng-controller="PageCtrl" ng-cloak ng-class="'{{::deviceModel}}'" class="loading">
     <div id="preloader">
         <div id="status"></div>
     </div>
@@ -60,7 +60,7 @@
         <div class="wa-container">
             <div class="status-bar">
                 <div class="time">
-                    15:16
+                    {{::deviceTimestamp | date : "shortTime"}}
                 </div>
                 <div class="battery">
                     <i class="zmdi zmdi-battery"></i>

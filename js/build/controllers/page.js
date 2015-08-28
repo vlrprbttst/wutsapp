@@ -10,6 +10,7 @@ define(['angular', 'services/device'], function(angular) {
      */
     angular.module('wutsapp.controllers.PageCtrl', ['wutsapp.services.Device'])
         .controller('PageCtrl', function($scope, $window, Device) {
-            $scope.deviceType = Device.get();
+            $scope.deviceModel = Device.getModel();
+            $scope.deviceTimestamp = Device.getTimestamp();
         });
 });

@@ -1,12 +1,12 @@
-define(['angular'], function(angular) {
+define(['angular','services/device'], function(angular) {
     'use strict';
-    angular.module('wutsapp.services.Message', [])
-        .factory('Message', function() {
+    angular.module('wutsapp.services.Message', ['wutsapp.services.Device'])
+        .factory('Message', function(Device) {
             var Message = function(json) {
                 this.id = json.id;
                 this.text = json.text;
                 this.you = json.you;
-                this.timestamp = (new Date().getTime() - Math.random()*3600000) + (Math.random() * 60000) * this.id;
+                this.timestamp = Device.getTimestamp() + (Math.random() + this.id) * 60000;
             };
 
             return Message;

@@ -12,11 +12,18 @@ define(['angular'], function(angular) {
     angular.module('wutsapp.services.Device', [])
         .service('Device', function() {
 
-            var types = ["nexus6", "s6", "nexus5", "motoX"];
+            var models = ["nexus6", "s6", "nexus5", "motoX"];
 
-            var type = types[Math.floor((Math.random() * types.length))];
-            this.get = function() {
-                return type;
+            var model = models[Math.floor((Math.random() * models.length))];
+            var timestamp = (new Date().getTime() - Math.random()*3600000);
+            
+            this.getModel = function() {
+                return model;
             };
+
+            this.getTimestamp = function() {
+                return timestamp;
+            };
+
         });
 });
