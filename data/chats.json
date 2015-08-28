@@ -1,4 +1,26 @@
 [{
+    "name": "Mother",
+    "user": {
+        "name": "Mother",
+        "status": "online now",
+        "image": "https://s3.amazonaws.com/uifaces/faces/twitter/jadlimcaco/128.jpg"
+    },
+    "messages": [
+	    {
+	        "text": "Ciao1"
+	    }, 
+	    {
+	        "text": "Ciao2 ",
+	        "you": true
+	    },
+	   {
+	        "text": "Ciao3 ",
+	        "you": true
+	    }
+
+    ]
+},
+{
     "name": "Not My Drug Dealer",
     "user": {
         "name": "Not My Drug Dealer",
