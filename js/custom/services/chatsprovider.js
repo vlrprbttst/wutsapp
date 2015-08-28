@@ -1,5 +1,5 @@
 /*jshint unused: vars */
-define(['angular','services/chat'], function(angular) {
+define(['angular', 'services/chat'], function(angular) {
     'use strict';
 
     /**
@@ -10,22 +10,36 @@ define(['angular','services/chat'], function(angular) {
      * Service in the angularjsRequiresjsYeomanTestApp.
      */
     angular.module('wutsapp.services.ChatsProvider', ['wutsapp.services.Chat'])
-        .service('ChatsProvider', function(Chat) {
-            var chat = new Chat({
-                name: "Not My Drug Dealer",
-                status: "online now",
-                image: "https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg"
-            }, [{
-                text: "Don't save my name as anything sketchy.",
-                date: "21:12"
-            }, {
-                text: "Okay man I gotchu ",
-                date: "21:12",
-                you: true
-            }]);
+        .service('ChatsProvider', function($http, $q, Chat) {
+            var chats = [];
 
-            this.getChat = function(index) {
-                return chat;
+            this.getChat = function(id) {
+
+                var getChatsPromise = $q(function(resolve, reject) {
+                    if (chats.length !== 0) {
+                        if (typeof id === "undefined") {
+                            id = Math.floor(Math.random() * chats.length);
+                        }
+                        resolve(chats[id]);
+                        return;
+                    }
+                    $http({
+                        method: 'GET',
+                        url: '/data/chats.json'
+                    }).then(function(response) {
+                        angular.forEach(response.data, function(chatJSON, index) {
+                            chatJSON.id = index + 1;
+                            chats.push(new Chat(chatJSON));
+                        });
+                        if (typeof id === "undefined") {
+                            id = Math.floor(Math.random() * chats.length);
+                        }
+                        resolve(chats[id]);
+                    });
+
+                });
+
+                return getChatsPromise;
             };
 
         });

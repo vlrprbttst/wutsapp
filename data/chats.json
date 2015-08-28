@@ -1,0 +1,59 @@
+[{
+    "name": "Not My Drug Dealer",
+    "user": {
+        "name": "Not My Drug Dealer",
+        "status": "online now",
+        "image": "https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg"
+    },
+    "messages": [{
+        "text": "Don't save my name as anything sketchy."
+    }, {
+        "text": "Okay man I gotchu ",
+        "you": true
+    }]
+},
+{
+    "name": "New 1",
+    "user": {
+        "name": "New 1",
+        "status": "online now",
+        "image": "https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg"
+    },
+    "messages": [{
+        "text": "New 1.",
+        "you": true
+    }, {
+        "text": "New 1"
+    }]
+},
+{
+    "name": "New 2",
+    "user": {
+        "name": "New 2",
+        "status": "online now",
+        "image": "https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg"
+    },
+    "messages": [{
+        "text": "New 2.",
+        "you": true
+    }, {
+        "text": "New 2"
+    }]
+},
+{
+    "name": "New 3",
+    "user": {
+        "name": "New 3",
+        "status": "online now",
+        "image": "https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg"
+    },
+    "messages": [{
+        "text": "New 3.",
+        "you": true
+    }, {
+        "text": "New 3"
+    }]
+}
+
+
+]
