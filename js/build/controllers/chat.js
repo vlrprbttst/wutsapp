@@ -1,4 +1,7 @@
-define(['angular', 'services/chatprovider'], function(angular) {
+define([
+    'angular',
+    'services/chatsprovider'
+], function(angular) {
     'use strict';
 
     /**
@@ -16,21 +19,21 @@ define(['angular', 'services/chatprovider'], function(angular) {
             }
             $scope.chat = chat;
 
-            var assureNewChat = $q(function(resolve, reject) {
-                function getNewChat() {
+            var getNewChat = $q(function(resolve, reject) {
+                function getChat() {
                     ChatsProvider.getChat().then(function(chat) {
                         if (chat.url != $scope.chat.url) {
                             resolve(chat);
                             return;
                         }
-                        getNewChat();
+                        getChat();
                     });
                 }
-                getNewChat();
+                getChat();
             });
 
-            assureNewChat.then(function(chat) {
-              $rootScope.newChatUrl = "/chat" + chat.url;
+            getNewChat.then(function(chat) {
+                $rootScope.newChatUrl = "/chat" + chat.url;
             });
         });
 });

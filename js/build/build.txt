@@ -3,11 +3,12 @@ main.js
 ----------------
 angular.js
 services/device.js
-directives/routeloadingindicator.js
 controllers/page.js
+services/message.js
 services/chat.js
 services/chatsprovider.js
 controllers/chat.js
+directives/routeloadingindicator.js
 app.js
 angular-route.js
 angular-cookies.js
