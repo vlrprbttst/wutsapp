@@ -1,6 +1,2 @@
-SetEnv PHP_VER 5_3
-SetEnv REGISTER_GLOBALS 0
-
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^(www.)?wutsapp.net$
-RewriteRule !\\.html|\\.js|\\.json|\\.css|\\.png|\\.gif$ /index.html [L]
+RewriteRule !\.html|\.css|\.png|\.json|\.gif$ /index.html [L]
