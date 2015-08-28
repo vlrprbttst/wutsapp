@@ -19,6 +19,15 @@ define([
             }
             $scope.chat = chat;
 
+            $scope.showInteractionAlert = function() {
+                $scope.chat.interactionAlert = true;
+                $scope.chat.newMessage = "Sorry :-)";
+            };
+
+            $scope.hideInteractionAlert = function() {
+                $scope.chat.interactionAlert = false;
+            };
+
             var getNewChat = $q(function(resolve, reject) {
                 function getChat() {
                     ChatsProvider.getChat().then(function(chat) {

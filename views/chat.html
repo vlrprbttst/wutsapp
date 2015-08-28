@@ -21,13 +21,13 @@
         <i class="zmdi zmdi-phone"></i>
     </div>
 </div>
-<div class="chat-window">
-    <div class="alert-overlay">
+<div class="chat-window" ng-class="{'alert': chat.interactionAlert, 'reverse': !chat.interactionAlert}">
+    <div class="alert-overlay" >
         <div class="alert-card">
             <div class="left">
                 I'm sorry but you can't interact with any of these chats.
             </div>
-            <div class="right">
+            <div class="right" ng-click="hideInteractionAlert()">
                 <i class="zmdi zmdi-close"></i>
             </div>
         </div>
@@ -39,9 +39,9 @@
         </div>
     </div>
     <!-- conversation end -->
-    <div class="textarea">
+    <div class="textarea" ng-click="showInteractionAlert()">
         <div class="emoticons"></div>
-        <textarea class="message" name="message" placeholder="Type a message"></textarea>
+        <textarea class="message" name="message" placeholder="Type a message">{{chat.newMessage}}</textarea>
         <div class="photo">
             <i class="zmdi zmdi-camera"></i>
         </div>
