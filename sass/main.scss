@@ -5,26 +5,24 @@
 @import "partials/_normalize.scss";
 @import "partials/_animations.scss";
 @import "partials/_phones.scss";
-
-
 html {
-  box-sizing: border-box;
-  height: 100%;
+    box-sizing: border-box;
+    height: 100%;
 }
- 
+
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body {
-  font-family:$font;
-  background-image:url("../images/dist/bg.png");
-  background-position:center center;
-  background-repeat:no-repeat;
-  background-size:cover;
-  height: 100%;
+    font-family: $font;
+    background-image: url("../images/dist/bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
 
 .logo {
@@ -33,502 +31,462 @@ body {
     top: 60px;
     left: 20px;
     p {
-    
-    color:darken(#fff,15%);
-    margin: 0 auto;
-    padding:5px 10px 0;
-    line-height:22px;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-  font-weight: 300;
-    text-align: center;
-    
-    a,
-    a:visited{
-      color:darken(#fff,15%);
-      text-decoration: none;
-       
+        color: darken(#fff, 15%);
+        margin: 0 auto;
+        padding: 5px 10px 0;
+        line-height: 22px;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 300;
+        text-align: center;
+        a,
+        a:visited {
+            color: darken(#fff, 15%);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     }
-    a:hover {text-decoration: underline;}
-}
-  img {width: 100%;}
+    img {
+        width: 100%;
+    }
 }
 
 .phone {
-  width: 100%;
-  height: 100%;
-  background-position:center center;
-  background-repeat:no-repeat;
-  background-size: auto 800px;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 800px;
 }
 
 .chat-root,
 .chat-loader {
-  height:100%;
+    height: 100%;
 }
 
 .chat-loader {
-    background-image:url("../images/dist/spinner.gif"); 
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:100px auto;
+    background-image: url("../images/dist/spinner.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px auto;
 }
 
+
+/*
 body.loading {
   #preloader {display: block;}
 }
+*/
 
 #preloader {
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background-color:#fff; 
-    z-index:99999;
-    display: none;
-   //animation: preloader forwards cubic-bezier(0.86, 0, 0.07, 1) 1s .2s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99999;
+    opacity: 1.0;
+    //display: none;
+    //animation: preloader forwards cubic-bezier(0.86, 0, 0.07, 1) 1s .2s;
+    &.ng-leave {
+        opacity: 1.0;
+        transition: all linear .5s;
+    }
+    &.ng-leave-active {
+        opacity: 0;
+    }
 }
 
 $loader:64px;
-
 #status {
-    width:$loader;
-    height:$loader;
-    background-image:url("../images/dist/spinner.gif"); 
-    background-repeat:no-repeat;
-    background-position:center center;
-    background-size:$loader auto;
+    width: $loader;
+    height: $loader;
+    background-image: url("../images/dist/spinner.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: $loader auto;
     //animation: status forwards cubic-bezier(0.86, 0, 0.07, 1) 1s ;
     margin: -($loader/2) auto 0 ($loader/2);
     position: absolute;
     left: 50%;
-    top: 50%; 
+    top: 50%;
 }
 
 .new-link {
-  @include unstyled-link;
+    @include unstyled-link;
 }
 
 .new {
-  left:20px;
-  bottom:20px;
-  position:absolute;
-  background:white;
-  text-align:center;
-  font-size:18px;
-  padding:10px 20px;
-  text-transform:uppercase;
-  border-bottom:5px solid darken(#fff,20%);
-  cursor:pointer;
-  border-radius:25px;
-  
-  &:hover {
-    background:darken(#fff,10%);
-    border-bottom:5px solid darken(#fff,30%);
-    text-shadow:0 1px 0 white;
-  }
+    left: 20px;
+    bottom: 20px;
+    position: absolute;
+    background: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-bottom: 5px solid darken(#fff, 20%);
+    cursor: pointer;
+    border-radius: 25px;
+    &:hover {
+        background: darken(#fff, 10%);
+        border-bottom: 5px solid darken(#fff, 30%);
+        text-shadow: 0 1px 0 white;
+    }
 }
-
 
 .wa {
-  &-container {
-    @include absolute-center-absolute;
-    margin:0 auto;
-
-    .status-bar {
-      height: 25px;
-      background: #054d44;
-      @include clearfix;
-      color:#fff;
-      font-size:14px;
-      padding:0 8px;
-      
-      div {
-        float: right;
-        @include vertical-align;
-        margin:0 0 0 8px;
-      }
-    } //status bar
-    
-    .user-bar {
-      height: 55px;
-      background: #075e54;
-      @include clearfix;
-      color:#fff;
-      padding:0 8px;
-      font-size:24px;
-
-      div {
-        float: left;
-        @include vertical-align;
-        
-        &.actions {
-          float: right;
-          margin: 0 0 0 20px; 
-          &.more {
-            margin:0 12px 0 20px;
-          }
-          &.attachment {
-            i {
-            display: block;
-            transform:rotate(-45deg);
+    &-container {
+        @include absolute-center-absolute;
+        margin: 0 auto;
+        .status-bar {
+            height: 25px;
+            background: #054d44;
+            @include clearfix;
+            color: #fff;
+            font-size: 14px;
+            padding: 0 8px;
+            div {
+                float: right;
+                @include vertical-align;
+                margin: 0 0 0 8px;
             }
-          }
-        }
-      }
-      
-      .user {
-        margin:0 0 0 8px;
-        width: 36px;
-        height: 36px; 
-        img {
-          border-radius:50%;
-          display: block;
-          box-shadow:0 1px 0 rgba(255,255,255,.1);
-          width: 100%;
-        }
-      } //user
-      
-      .user-name {
-        font-size:16px;
-        margin: 0 0 0 8px;
-        width: 165px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-        span {
-          display: block;
-          font-size:12px;
-        }
-      }//username
-    }//user bar
-    
-    
-    .bottom-bar {
-      height: 47px;
-      background:#000;
-      color:#fff;
-      font-size:22px;
-      
-      div {
-        width: 33.333333%;
-        float: left;
-        text-align: center;
-        @include vertical-align;
-        
-        &.triangle {
-          i {
-            display: block;
-            transform:rotate(-90deg);
-          }
-        }
-      } 
-    } //bottom bar
-    
-    .chat-window {
-      height: calc(100% - 152px);
-      position: relative;
-      background:url("../images/dist/wall.jpg");
-      background-size:100%;
-      @include clearfix;
-      box-shadow:inset 0 10px 10px -10px #000000;
-      
-      .conversation {
-        width: 100%;
-        overflow:auto;
-        height: calc(100% - 68px);
-        padding: 0 16px;
-        @include clearfix;
-      }
-      
-      
-      .balloon {
-        padding:8px;
-        position:relative;
-        color:#000;
-        font-size:14px;
-        line-height: 18px;
-        box-shadow:0 0 1px rgba(0,0,0,.2);
-        clear:both;
-        margin:8px 0;
-        max-width:85%;
-        
-        &:after {
-          position: absolute;
-          content:"";
-          width: 0;
-          height: 0;
-          border-style: solid;
-          
-        }
-        
-        .data {
-          display: inline-block;
-          padding:0 20px 0 16px;
-          font-size:11px;
-          color:#b9b9b9;
-          position: relative;
-          bottom:-5px;
-          float: right;
-          background-repeat:no-repeat;
-          background-position:right 3px;
-          background-color:transparent;
-          background-size:16px auto;
-          &.grey {background-image:url("../images/dist/singlegrey.png");background-size:12px;padding:0 14px 0 16px;background-position:right 2px;}
-          &.doublegrey {background-image:url("../images/dist/doublegrey.png");}
-          &.blue {background-image:url("../images/dist/blue.png");}    
-        }
-        
-        img {
-          width: 100%;
-        }
-        
-        &:first-child {
-        margin:16px 0 8px;  
-        }
-        
-        &.him {
-          background:#fff;
-          float: left;
-          border-radius:0px 5px 5px 5px;
-          
-          .data {padding:0 0 0 16px;}
-          
-          &:after {
-            top: 0;
-            left: -10px;
-            border-width: 0px 10px 10px 0;
-            border-color: transparent #fff transparent transparent;
-            
-          }
-        }
-        
-        &.you {
-          background:#e1ffc7;
-          float: right;
-          border-radius:5px 0px 5px 5px;
-          
-          &:after {
-            top: 0;
-            right: -10px;
-            border-width: 0px 0 10px 10px;
-            border-color: transparent transparent transparent #e1ffc7;
-          }
-        }
-      }//balloon
-      
-      .textarea {
-        width: 100%;
-        z-index:2;
-        left: 0;
-        position: absolute;
-        bottom: 8px;
-        height:50px;
-        padding:0 0 0 8px;
-        @include clearfix;
-        
-        ::-webkit-input-placeholder {
-           color: #b9b9b9;
-        }
-
-        ::-moz-placeholder {  /* Firefox 19+ */
-          color: #b9b9b9;
-        }
-        
-        :-ms-input-placeholder {  
-           color: #b9b9b9;
-        }
-        
-        div,
-        textarea {
-          height: 100%;
-          float: left;
-          background:#fff;
-        }
-        
-        .emoticons {
-          width: 10%;
-          background:url("../images/dist/smile.png") center center no-repeat #fff;
-          background-size: 20px;
-          border-radius:5px 0 0 5px;
-        }
-        
-        textarea {
-          width: 63%;
-          border:0;
-          outline:none;
-          padding-top:14px;
-          resize: none;
-        }
-
-        
-        .photo {
-          width: 10%;
-          border-radius:0 0 5px 0;
-          position:relative;
-          text-align: center;
-          
-          &:after {
-            position: absolute;
-            width: 0;
-            height: 0;
-            border-style:solid;
-            content:"";
-            top: 0;
-            right: -10px;
-            border-width: 0px 0 10px 10px;
-            border-color: transparent transparent transparent #fff;
-            
-          }
-          
-          
-          i {
-            display: block;
-            @include absolute-center;
-            color:#7d8488;
-            font-size:24px;
-          }
-        }
-        
-        .send-mic {
-          width: 17%;
-          background:transparent;
-          position: relative;
-          cursor:pointer;
-          
-          .circle-cont {
-            color:#fff;
-            border-radius:50%;
-            @include absolute-center;
-            background: #00897b;
-            width: 48px;
-            height: 48px;
-            box-shadow:0 1px 0 darken(#00897b,10%);
-            
-            i {
-              display: inline-block;
-              @include absolute-center;
-              font-size: 24px;
-              
-            
+        } //status bar
+        .user-bar {
+            height: 55px;
+            background: #075e54;
+            @include clearfix;
+            color: #fff;
+            padding: 0 8px;
+            font-size: 24px;
+            div {
+                float: left;
+                @include vertical-align;
+                &.actions {
+                    float: right;
+                    margin: 0 0 0 20px;
+                    &.more {
+                        margin: 0 12px 0 20px;
+                    }
+                    &.attachment {
+                        i {
+                            display: block;
+                            transform: rotate(-45deg);
+                        }
+                    }
+                }
             }
-          }
-        }
-      }//text area container
-      
-      .alert-overlay,
-      .alert-card {
-        display:none;
-        opacity:0;
-        
-       
-      }
-      $delay:.5s;
-      
-
-      
-      
-      &.alert {
-        
-       .alert-overlay {
-        display:block;
-        position: absolute;
-        z-index:100;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity:1;
-        background:rgba(0,0,0,.6);
-        animation: overlay $delay forwards cubic-bezier(0.86, 0, 0.07, 1);
-        
-        &.reverse {
-          animation: overlay-reverse $delay forwards cubic-bezier(0.86, 0, 0.07, 1) .1s;
-        }
-
-      }
-      
-      .alert-card {
-        
-        z-index:101;
-        position:absolute;
-        left:50%;
-        top:50%;
-        margin:-35px 0 0 -160px;
-        display: block;
-        background:white;
-        width: 320px;
-        height:70px;
-        padding:16px;        
-        border-radius:2px;
-        box-shadow:0 0 20px rgba(0,0,0,.4);
-        @include clearfix;
-        animation: card 1s forwards cubic-bezier(0.86, 0, 0.07, 1);
-        
-       &.reverse {
-          animation: card-reverse 1s forwards cubic-bezier(0.86, 0, 0.07, 1);
-        }
-        
-        
-        .left {
-          width: 85%;
-          float: left;
-        }
-        .right {
-          width: 15%;
-          float: left;
-          text-align: center;
-          font-size:26px;
-          color:#b9b9b9;
-          cursor:pointer;
-          height: 100%;
-            &:hover {
-              color:#666;
+            .user {
+                margin: 0 0 0 8px;
+                width: 36px;
+                height: 36px;
+                img {
+                    border-radius: 50%;
+                    display: block;
+                    box-shadow: 0 1px 0 rgba(255, 255, 255, .1);
+                    width: 100%;
+                }
+            } //user
+            .user-name {
+                font-size: 16px;
+                margin: 0 0 0 8px;
+                width: 165px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                span {
+                    display: block;
+                    font-size: 12px;
+                }
+            } //username
+        } //user bar
+        .bottom-bar {
+            height: 47px;
+            background: #000;
+            color: #fff;
+            font-size: 22px;
+            div {
+                width: 33.333333%;
+                float: left;
+                text-align: center;
+                @include vertical-align;
+                &.triangle {
+                    i {
+                        display: block;
+                        transform: rotate(-90deg);
+                    }
+                }
             }
-          }
-        } 
-      }    
-    }//chat window
-  } //container
+        } //bottom bar
+        .chat-window {
+            height: calc(100% - 152px);
+            position: relative;
+            background: url("../images/dist/wall.jpg");
+            background-size: 100%;
+            @include clearfix;
+            box-shadow: inset 0 10px 10px -10px #000000;
+            .conversation {
+                width: 100%;
+                overflow: auto;
+                height: calc(100% - 68px);
+                padding: 0 16px;
+                @include clearfix;
+            }
+            .balloon {
+                padding: 8px;
+                position: relative;
+                color: #000;
+                font-size: 14px;
+                line-height: 18px;
+                box-shadow: 0 0 1px rgba(0, 0, 0, .2);
+                clear: both;
+                margin: 8px 0;
+                max-width: 85%;
+                &:after {
+                    position: absolute;
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                }
+                .data {
+                    display: inline-block;
+                    padding: 0 20px 0 16px;
+                    font-size: 11px;
+                    color: #b9b9b9;
+                    position: relative;
+                    bottom: -5px;
+                    float: right;
+                    background-repeat: no-repeat;
+                    background-position: right 3px;
+                    background-color: transparent;
+                    background-size: 16px auto;
+                    &.grey {
+                        background-image: url("../images/dist/singlegrey.png");
+                        background-size: 12px;
+                        padding: 0 14px 0 16px;
+                        background-position: right 2px;
+                    }
+                    &.doublegrey {
+                        background-image: url("../images/dist/doublegrey.png");
+                    }
+                    &.blue {
+                        background-image: url("../images/dist/blue.png");
+                    }
+                }
+                img {
+                    width: 100%;
+                }
+                &:first-child {
+                    margin: 16px 0 8px;
+                }
+                &.him {
+                    background: #fff;
+                    float: left;
+                    border-radius: 0px 5px 5px 5px;
+                    .data {
+                        padding: 0 0 0 16px;
+                    }
+                    &:after {
+                        top: 0;
+                        left: -10px;
+                        border-width: 0px 10px 10px 0;
+                        border-color: transparent #fff transparent transparent;
+                    }
+                }
+                &.you {
+                    background: #e1ffc7;
+                    float: right;
+                    border-radius: 5px 0px 5px 5px;
+                    &:after {
+                        top: 0;
+                        right: -10px;
+                        border-width: 0px 0 10px 10px;
+                        border-color: transparent transparent transparent #e1ffc7;
+                    }
+                }
+            } //balloon
+            .textarea {
+                width: 100%;
+                z-index: 2;
+                left: 0;
+                position: absolute;
+                bottom: 8px;
+                height: 50px;
+                padding: 0 0 0 8px;
+                @include clearfix;
+                ::-webkit-input-placeholder {
+                    color: #b9b9b9;
+                }
+                ::-moz-placeholder {
+                    /* Firefox 19+ */
+                    color: #b9b9b9;
+                }
+                :-ms-input-placeholder {
+                    color: #b9b9b9;
+                }
+                div,
+                textarea {
+                    height: 100%;
+                    float: left;
+                    background: #fff;
+                }
+                .emoticons {
+                    width: 10%;
+                    background: url("../images/dist/smile.png") center center no-repeat #fff;
+                    background-size: 20px;
+                    border-radius: 5px 0 0 5px;
+                }
+                textarea {
+                    width: 63%;
+                    border: 0;
+                    outline: none;
+                    padding-top: 14px;
+                    resize: none;
+                }
+                .photo {
+                    width: 10%;
+                    border-radius: 0 0 5px 0;
+                    position: relative;
+                    text-align: center;
+                    &:after {
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        content: "";
+                        top: 0;
+                        right: -10px;
+                        border-width: 0px 0 10px 10px;
+                        border-color: transparent transparent transparent #fff;
+                    }
+                    i {
+                        display: block;
+                        @include absolute-center;
+                        color: #7d8488;
+                        font-size: 24px;
+                    }
+                }
+                .send-mic {
+                    width: 17%;
+                    background: transparent;
+                    position: relative;
+                    cursor: pointer;
+                    .circle-cont {
+                        color: #fff;
+                        border-radius: 50%;
+                        @include absolute-center;
+                        background: #00897b;
+                        width: 48px;
+                        height: 48px;
+                        box-shadow: 0 1px 0 darken(#00897b, 10%);
+                        i {
+                            display: inline-block;
+                            @include absolute-center;
+                            font-size: 24px;
+                        }
+                    }
+                }
+            } //text area container
+            .alert-overlay,
+            .alert-card {
+                display: none;
+                opacity: 0;
+            }
+            $delay:.5s;
+            &.alert {
+                .alert-overlay {
+                    display: block;
+                    position: absolute;
+                    z-index: 100;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 1;
+                    background: rgba(0, 0, 0, .6);
+                    animation: overlay $delay forwards cubic-bezier(0.86, 0, 0.07, 1);
+                    &.reverse {
+                        animation: overlay-reverse $delay forwards cubic-bezier(0.86, 0, 0.07, 1) .1s;
+                    }
+                }
+                .alert-card {
+                    z-index: 101;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    margin: -35px 0 0 -160px;
+                    display: block;
+                    background: white;
+                    width: 320px;
+                    height: 70px;
+                    padding: 16px;
+                    border-radius: 2px;
+                    box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+                    @include clearfix;
+                    animation: card 1s forwards cubic-bezier(0.86, 0, 0.07, 1);
+                    &.reverse {
+                        animation: card-reverse 1s forwards cubic-bezier(0.86, 0, 0.07, 1);
+                    }
+                    .left {
+                        width: 85%;
+                        float: left;
+                    }
+                    .right {
+                        width: 15%;
+                        float: left;
+                        text-align: center;
+                        font-size: 26px;
+                        color: #b9b9b9;
+                        cursor: pointer;
+                        height: 100%;
+                        &:hover {
+                            color: #666;
+                        }
+                    }
+                }
+            }
+        } //chat window
+    } //container
 }
-
 
 footer {
-  position:fixed;
-  bottom: 0;
-  right: 0;
-text-align: center;
-  line-height:22px;
-  color:#fff;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-  font-weight: 300;
-  padding:0 10px 10px;
-
-  @include clearfix;
-  
-  i {padding:0 5px 0 0;}
-  
-  a,
-  a:visited {
-    color:#fff;
-  }
-  
-  a:hover {
-    @include unstyled-link;
-  }
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    line-height: 22px;
+    color: #fff;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    padding: 0 10px 10px;
+    @include clearfix;
+    i {
+        padding: 0 5px 0 0;
+    }
+    a,
+    a:visited {
+        color: #fff;
+    }
+    a:hover {
+        @include unstyled-link;
+    }
 }
+
 .fb-like {
     position: relative;
     top: -4px;
 }
 
 .sharingiscaring {
-  position:fixed;
-  top:20px;
-  left:20px;
-  overflow:visible;
-  z-index:999;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    overflow: visible;
+    z-index: 999;
 }
 
-.wrapperchat{
-height: calc(100% - 81px);
+.wrapperchat {
+    height: calc(100% - 81px);
 }
