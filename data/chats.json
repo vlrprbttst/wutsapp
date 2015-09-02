@@ -1,81 +1,142 @@
-[{
-    "name": "Mother",
-    "user": {
-        "name": "Mother",
-        "status": "online now",
-        "image": "https://s3.amazonaws.com/uifaces/faces/twitter/jadlimcaco/128.jpg"
-    },
-    "messages": [
-	    {
-	        "text": "Ciao1"
-	    }, 
-	    {
-	        "text": "Ciao2 ",
-	        "you": true
-	    },
-	   {
-	        "text": "Ciao3 ",
-	        "you": true
-	    }
-
-    ]
-},
-{
-    "name": "Not My Drug Dealer",
-    "user": {
-        "name": "Not My Drug Dealer",
-        "status": "online now",
-        "image": "https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg"
-    },
-    "messages": [{
-        "text": "Don't save my name as anything sketchy."
-    }, {
-        "text": "Okay man I gotchu ",
-        "you": true
-    }]
-},
-{
-    "name": "New 1",
-    "user": {
-        "name": "New 1",
-        "status": "online now",
-        "image": "https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg"
-    },
-    "messages": [{
-        "text": "New 1.",
-        "you": true
-    }, {
-        "text": "New 1"
-    }]
-},
-{
-    "name": "New 2",
-    "user": {
-        "name": "New 2",
-        "status": "online now",
-        "image": "https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg"
-    },
-    "messages": [{
-        "text": "New 2.",
-        "you": true
-    }, {
-        "text": "New 2"
-    }]
-},
-{
-    "name": "New 3",
-    "user": {
-        "name": "New 3",
-        "status": "online now",
-        "image": "https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg"
-    },
-    "messages": [{
-        "text": "New 3.",
-        "you": true
-    }, {
-        "text": "New 3"
-    }]
-}
-
-
+[
+	{
+		"name": "Ex",
+		"user": {
+			"name": "Ex",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/kfriedson/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "You are a bitch",
+				"you": true
+			}, {
+				"text": "..."
+			}, {
+				"text": "I've been called worse"
+			}, {
+				"text": "Really? Like what?",
+				"you": true
+			}, {
+				"text": "Your girlfriend"
+			}
+		]
+	}, {
+		"name": "Not My Drug Dealer",
+		"user": {
+			"name": "Not My Drug Dealer",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "Don't save my name as anything sketchy."
+			}, {
+				"text": "Okay man I gotchu ",
+				"you": true
+			}
+		]
+	}, {
+		"name": "Dance Contest",
+		"user": {
+			"name": "Matt",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/fran6/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "Dude, you were sooooo drunk yesterday night!",
+				"you": true
+			}, {
+				"text": "Awesome what happened?"
+			}, {
+				"text": "You walked across the dance floor to get another drink and won the dance contest..",
+				"you": true
+			}, {
+				"text": "Intense"
+			}
+		]
+	}, {
+		"name": "Only friend",
+		"user": {
+			"name": "Mom",
+			"status": "online now",
+			"image": "http://www.kludgymom.com/wp-content/uploads/2010/02/headshot500x333.jpg"
+		},
+		"messages": [
+			{
+				"text": "Can you call me I lost my phone in my bed",
+				"you": true
+			}, {
+				"text": "Am I your only friend?"
+			}
+		]
+	}, {
+		"name": "Princess",
+		"user": {
+			"name": "Laura",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/madysondesigns/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "Princess",
+				"you": true
+			}, {
+				"text": "Who is this?"
+			}, {
+				"text": "Sorry wrong number",
+				"you": true
+			}, {
+				"text": "Come back i'll be your princess"
+			}, {
+				"text": "We will meet again, in another life",
+				"you": true
+			}, {
+				"text": "I love you"
+			}, {
+				"text": "I love you too princess",
+				"you": true
+			}
+		]
+	}, {
+		"name": "You suck",
+		"user": {
+			"name": "Martina",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/jina/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "Everyone thinks you suck!",
+				"you": true
+			}, {
+				"text": "I think you have a wrong number"
+			}, {
+				"text": "James?",
+				"you": true
+			}, {
+				"text": "Nope. Martina."
+			}, {
+				"text": "Well you probably suck too",
+				"you": true
+			}
+		]
+	}, {
+		"name": "Replying to your own text",
+		"user": {
+			"name": "Alex",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/minipunk/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "Are you in town?",
+				"you": true
+			}, {
+				"text": "Nah mate, I'm home now",
+				"you": true
+			}
+		]
+	}
 ]
