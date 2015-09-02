@@ -26,7 +26,6 @@
     <meta name="twitter:title" content="whatsapp">
     <meta name="twitter:description" content=" whatsapp long description">
     <meta name="twitter:image" content="http://www.wutsapp.net/images/dist/twt.jpg">
-    
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="content-language" content="EN">
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,300" rel="stylesheet" type="text/css">
@@ -35,62 +34,60 @@
     <base href="/">
 </head>
 
-<body ng-app="wutsapp" ng-controller="PageCtrl" ng-cloak ng-class="'{{::deviceModel}}'" class="loading">
-
+<body ng-app="wutsapp">
     <div id="preloader" ng-if="!loaded">
         <div id="status"></div>
     </div>
-
-    <div class="sharingiscaring">
-        <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world" data-size="small" style="padding:0 5px 0 0"> Tweet</a>
-        <div class="fb-like" data-href="http://www.valeriopierbattista.com/projects/whatsapp/index.php" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
-    </div>
-    <div id="fb-root"></div>
-    <div class="logo">
-        <img src="images/dist/logo.png" alt="wutsapp" />
-        <p>
-            <a href="http://whatsapp.com" target="_blank">Whatsapp</a>-flavoured random instant message non sense
-        </p>
-    </div>
-    
-    <a class="new-link" ng-href="{{newChatUrl}}">
-        <div class="new">
-            <i class="zmdi zmdi-refresh-alt"></i> new conversation
+    <div class="page" ng-controller="PageCtrl" ng-cloak ng-class="'{{::deviceModel}}'">
+        <div class="sharingiscaring">
+            <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world" data-size="small" style="padding:0 5px 0 0"> Tweet</a>
+            <div class="fb-like" data-href="http://www.valeriopierbattista.com/projects/whatsapp/index.php" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
         </div>
-    </a>
-    
-    <div class="phone">
-        <div class="wa-container">
-            <div class="status-bar">
-                <div class="time">
-                    {{::deviceTimestamp | date : "shortTime"}}
-                </div>
-                <div class="battery">
-                    <i class="zmdi zmdi-battery"></i>
-                </div>
-                <div class="network">
-                    <i class="zmdi zmdi-network"></i>
-                </div>
-                <div class="wifi">
-                    <i class="zmdi zmdi-wifi-alt-2"></i>
-                </div>
-                <div class="star">
-                    <i class="zmdi zmdi-star"></i>
-                </div>
+        <div id="fb-root"></div>
+        <div class="logo">
+            <img src="images/dist/logo.png" alt="wutsapp" />
+            <p>
+                <a href="http://whatsapp.com" target="_blank">Whatsapp</a>-flavoured random instant message non sense
+            </p>
+        </div>
+        <a class="new-link" ng-href="{{newChatUrl}}">
+            <div class="new">
+                <i class="zmdi zmdi-refresh-alt"></i> new conversation
             </div>
-            <div class="wrapperchat">
-                <route-loading-indicator class="chat-loader"></route-loading-indicator>
-                <div ng-if='!isRouteLoading' ng-view class="chat-root"></div>
-            </div>
-            <div class="bottom-bar">
-                <div class="triangle">
-                    <i class="zmdi zmdi-triangle-up"></i>
+        </a>
+        <div class="phone">
+            <div class="wa-container">
+                <div class="status-bar">
+                    <div class="time">
+                        {{::deviceTimestamp | date : "shortTime"}}
+                    </div>
+                    <div class="battery">
+                        <i class="zmdi zmdi-battery"></i>
+                    </div>
+                    <div class="network">
+                        <i class="zmdi zmdi-network"></i>
+                    </div>
+                    <div class="wifi">
+                        <i class="zmdi zmdi-wifi-alt-2"></i>
+                    </div>
+                    <div class="star">
+                        <i class="zmdi zmdi-star"></i>
+                    </div>
                 </div>
-                <div>
-                    <i class="zmdi zmdi-circle-o"></i>
+                <div class="wrapperchat">
+                    <route-loading-indicator class="chat-loader"></route-loading-indicator>
+                    <div ng-if='!isRouteLoading' ng-view class="chat-root"></div>
                 </div>
-                <div>
-                    <i class="zmdi zmdi-square-o"></i>
+                <div class="bottom-bar">
+                    <div class="triangle">
+                        <i class="zmdi zmdi-triangle-up"></i>
+                    </div>
+                    <div>
+                        <i class="zmdi zmdi-circle-o"></i>
+                    </div>
+                    <div>
+                        <i class="zmdi zmdi-square-o"></i>
+                    </div>
                 </div>
             </div>
         </div>
