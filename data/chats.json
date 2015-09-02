@@ -196,5 +196,127 @@
 				"text": "Hi it's Adam. Someone's found your phone"
 			}
 		]
+	}, {
+		"name": "cereal",
+		"user": {
+			"name": "Jenny",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/allisongrayce/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "what are you doing?",
+				"you": true
+			}, {
+				"text": "laying in bed"
+			}, {
+				"text": "Mmmm.. just laying in bed? Nothing else?..",
+				"you": true
+			}, {
+				"text": "im eating cereal"
+			}, {
+				"text": "Nice :) What would you do if I was there in bed with you?",
+				"you": true
+			} , {
+				"text": "Eat my cereal"
+			}, {
+				"text": "lol i mean if the cereal wasn't there",
+				"you": true
+			}, {
+				"text": "then id get out of bed and go get cereal"
+			}
+		]
+	}, {
+		"name": "awesome sex",
+		"user": {
+			"name": "Tinder hottie",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/uxceo/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "Hey, are you looking for some awesome sex? ;)",
+				"you": true
+			}, {
+				"text": "no.."
+			}, {
+				"text": "Then you're talking to the right person ;) ;)",
+				"you": true
+			}
+		]
+	}, {
+		"name": "so high",
+		"user": {
+			"name": "Noah",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/jm_denis/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "I've never been this high in my life",
+				"you": true
+			}, {
+				"text": "can u move"
+			}, {
+				"text": "why am I in the way?",
+				"you": true
+			}
+		]
+	}, {
+		"name": "story of my life",
+		"user": {
+			"name": "*HOTTIE*",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/skeletonkey/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "Hey how are you? :)",
+				"you": true
+			}, {
+				"text": "nice conversation..",
+				"you": true
+			}
+		]
+	}, {
+		"name": "cheating",
+		"user": {
+			"name": "Hun",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/barthchalvet/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "Hi babe, what are you doing?",
+				"you": true
+			}, {
+				"text": "Nothing much, 'em really tired. just going to sleep now babe. and you?"
+			}, {
+				"text": "In the club behind you",
+				"you": true
+			}
+		]
+	},
+	 {
+		"name": "asus-anus",
+		"user": {
+			"name": "Joey",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/Chakintosh/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "Hope i didn't wake you guys up before!",
+				"you": true
+			}, {
+				"text": "You didn't! we're laying in bed. dad's playing with my anus."
+			}, {
+				"image": "http://i.imgur.com/t7ZHW0q.png",
+				"you": true
+			},
+			{
+				"text": "My asus!!! my laptop!! ah!"
+			}
+		]
 	}
 ]
