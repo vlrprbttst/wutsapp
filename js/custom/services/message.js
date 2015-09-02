@@ -5,6 +5,7 @@ define(['angular','services/device'], function(angular) {
             var Message = function(json) {
                 this.id = json.id;
                 this.text = json.text;
+                this.image = json.image;
                 this.you = json.you;
                 this.timestamp = Device.getTimestamp() + (Math.random() + this.id) * 60000;
             };
