@@ -70,26 +70,10 @@ module.exports = function(grunt) {
       }
     }, //end imagemin
 
-    /*
-    concat: {
-      dist: {
-        src: ['js/libs/*.js', 'js/custom/*.js'],
-        dest: 'js/build/production.js'
-      }
-    }, //end concat
-
-    uglify: {
-      dist: {
-        src: 'js/build/production.js',
-        dest: 'js/build/production.min.js'
-      }
-    }, //end uglify
-    */
-
     sass: {
       dist: {
         options: {
-          style: 'nested', //no need for config.rb
+          style: 'compressed', //no need for config.rb
           compass: 'true'
         },
         files: {
@@ -104,8 +88,7 @@ module.exports = function(grunt) {
         processors: [
           require('autoprefixer-core')({
             browsers: 'last 2 version, IE 9'
-          }), // add vendor prefixes. for more: https://github.com/ai/browserslist
-          require('cssnano')() // minify the result
+          })
         ]
       },
       dist: {

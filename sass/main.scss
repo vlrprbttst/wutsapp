@@ -101,6 +101,7 @@ body {
 }
 
 $loader:60px;
+
 #status {
     width: $loader;
     height: $loader;
@@ -108,7 +109,7 @@ $loader:60px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: $loader auto;
-    margin: -($loader/2) auto 0 -($loader/2);
+    margin: -30px auto 0 -30px;
     position: absolute;
     left: 50%;
     top: 50%;
