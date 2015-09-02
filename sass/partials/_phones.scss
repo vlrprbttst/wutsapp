@@ -32,6 +32,26 @@
   } 
 }
 
+.page.small-device {
+  
+  .phone {background-image: url("../images/dist/small-device.png");background-size:auto 678px;}
+  
+  .wa-container {
+    width: 328px;
+    height: 467px;
+    padding: 0;
+    margin: -7px 0 0 0;
+      .user-bar .user-name {width: 135px;}
+      .chat-window {height: calc(100% - -2px);}
+      .chat-window .textarea textarea {width: 60%;}
+      .chat-window .textarea .send-mic {width: 20%;}
+  }
+  
+  .bottom-bar {
+    display: none;
+  } 
+}
+
 .page.nexus5 {
   .wa-container .user-bar .user-name {width: 163px;}
   .phone {background-image: url("../images/dist/nexus5.png");background-size:auto 772px;}
