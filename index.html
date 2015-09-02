@@ -36,7 +36,7 @@
 </head>
 
 <body ng-app="wutsapp">
-    <div id="preloader" ng-if="!loaded">
+    <div id="preloader" ng-show="!loaded">
         <div id="status"></div>
     </div>
     <div class="page" ng-controller="PageCtrl" ng-cloak ng-class="'{{::deviceModel}}'">
