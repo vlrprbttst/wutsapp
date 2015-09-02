@@ -61,7 +61,7 @@
 		"user": {
 			"name": "Mom",
 			"status": "online now",
-			"image": "http://www.kludgymom.com/wp-content/uploads/2010/02/headshot500x333.jpg"
+			"image": "https://c2.staticflickr.com/4/3949/15433084519_e01ac2e106_z.jpg"
 		},
 		"messages": [
 			{
@@ -138,9 +138,7 @@
 				"you": true
 			}
 		]
-	},
-	
-	{
+	}, {
 		"name": "tortoise fail",
 		"user": {
 			"name": "Neil",
@@ -148,9 +146,9 @@
 			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/jlantunez/128.jpg"
 		},
 		"messages": [
-			{	"image":"http://i.imgur.com/SdHCCSE.png",
-				"text": "Find this guy walking around our backyard today"
-				
+			{
+				"image": "http://i.imgur.com/SdHCCSE.png",
+				"text": "Found this guy walking around our backyard today"
 			}, {
 				"text": "Did you throw it in the water?!?!?!!?",
 				"you": true
@@ -159,7 +157,44 @@
 				"you": true
 			}
 		]
+	}, {
+		"name": "phone at home",
+		"user": {
+			"name": "Son",
+			"status": "Last seen today at 8:02 AM",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/mist3r_c0r3/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "You left your phone at home"
+			}
+		]
+	}, {
+		"name": "friend",
+		"user": {
+			"name": "Adam",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/trek/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "Hi, I've found this phone, you're the first on the contact list. Could you tell your friend it's been found?",
+				"you": true
+			}, {
+				"text": "Which friend?"
+			}, {
+				"text": "The one whose name is at the top of your screen.",
+				"you": true
+			}, {
+				"text": "ahahah oh yeah lol"
+			}, {
+				"text": "So can you tell them I've found it?",
+				"you": true
+			} , {
+				"text": "Yeah will do"
+			}, {
+				"text": "Hi it's Adam. Someone's found your phone"
+			}
+		]
 	}
-	
-	
 ]
