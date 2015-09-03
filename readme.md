@@ -24,3 +24,12 @@ then on the root of Wutsapp folder, type
 - `gem install compass` (compass support)
 
 When you're all set, type `grunt` (or `grunt dist`) - this will open a browser window with Wutsapp running. Most of the changes (scss, js, html etc.) will autorefresh the browser window.
+
+# Credits
+## Conversations
+
+The conversations are manually trascribed from popular random websites like cheezburger, facebook, google images or similar sources using
+search queries such as: instant message fails, chat fails etc.
+
+## Devices
+- [Samsung Galaxy S Plus](http://lutschgabriel.deviantart.com/art/Samsung-Galaxy-S-Plus-PSD-436357152);
