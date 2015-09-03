@@ -49,4 +49,8 @@ search queries such as: instant message fails, chat fails etc.
 
 ## Whatsapp official graphics
 
-Whatsapp official graphics downloaded from [http://media.whatsapp.com/graphics](http://media.whatsapp.com/graphics)
+- Whatsapp official graphics downloaded from [http://media.whatsapp.com/graphics](http://media.whatsapp.com/graphics)
+
+## Icons
+
+- [Material Design Iconic Font(http://zavoloklom.github.io/material-design-iconic-font/)
