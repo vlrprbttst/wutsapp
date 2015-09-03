@@ -1,4 +1,4 @@
-# Wutsapp
+# About Wutsapp
 Wutsapp is a collection of funny instant message conversations taken from the web, created and handcrafted by [Valerio Pierbattista](http://valeriopierbattista.com) and [Patrizio Munzi](https://www.linkedin.com/in/patriziomunzi).
 
 Check it out at www.wutsapp.net.
@@ -33,7 +33,7 @@ When you're all set, type `grunt` (or `grunt dist`) - this will open a browser w
 
 ## Conversations
 
-The conversations are manually trascribed from popular random websites like Cheezburger, Facebook, Google Images or similar sources using
+The conversations are manually transcribed from popular websites like Cheezburger, Facebook, Google Images or similar sources using
 search queries such as: instant message fails, chat fails etc.
 
 ## Device Mockups
