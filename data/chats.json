@@ -113,12 +113,12 @@
 			}, {
 				"text": "I think you have a wrong number"
 			}, {
-				"text": "James?",
+				"text": "Julian?",
 				"you": true
 			}, {
-				"text": "Nope. Martina."
+				"text": "No. Martina."
 			}, {
-				"text": "Well you probably suck too",
+				"text": "Well you suck too!",
 				"you": true
 			}
 		]
@@ -160,9 +160,9 @@
 	}, {
 		"name": "phone at home",
 		"user": {
-			"name": "Son",
+			"name": "dad",
 			"status": "Last seen today at 8:02 AM",
-			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/mist3r_c0r3/128.jpg"
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/ryanbattles/128.jpg"
 		},
 		"messages": [
 			{
@@ -296,8 +296,37 @@
 				"you": true
 			}
 		]
-	},
-	 {
+	}, {
+		"name": "falling",
+		"user": {
+			"name": "Esmeralda",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "I think I'm falling for you <3 :****"
+			}, {
+				"text": "You might wanna get the fuck up",
+				"you": true
+			}
+		]
+	}, {
+		"name": "johnny boy",
+		"user": {
+			"name": "john",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/eomerx/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "John?",
+				"you": true
+			}, {
+				"text": "I'll be there in five minutes. If not, read this again"
+			}
+		]
+	}, {
 		"name": "asus-anus",
 		"user": {
 			"name": "Joey",
@@ -313,9 +342,142 @@
 			}, {
 				"image": "http://i.imgur.com/t7ZHW0q.png",
 				"you": true
-			},
-			{
+			}, {
 				"text": "My asus!!! my laptop!! ah!"
+			}
+		]
+	}, {
+		"name": "the belt",
+		"user": {
+			"name": "Ian",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/jadlimcaco/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "I want a picture for my birthday",
+				"you": true
+			}, {
+				"image": "http://i.imgur.com/WU0wgU5.png",
+				"text": "Happy Birthday!!!"
+			}, {
+				"text": "of you naked",
+				"you": true
+			}, {
+				"image": "http://i.imgur.com/LOu5E6s.png"
+			}, {
+				"text": "under the belt",
+				"you": true
+			}, {
+				"image": "http://i.imgur.com/bFlmmH5.png"
+			}
+		]
+	}, {
+		"name": "wtfantastic",
+		"user": {
+			"name": "Dad",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/linkibol/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "Got an A in chem!!!",
+				"you": true
+			}, {
+
+				"text": "WTF well done!!!"
+			}, {
+				"text": "Dad what do you think WTF means?",
+				"you": true
+			}, {
+				"text": "Well That's Fantastic"
+			}
+		]
+	}, {
+		"name": "linking park",
+		"user": {
+			"name": "Sally",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/madysondesigns/128.jpg"
+		},
+		"messages": [
+			{
+
+				"text": "So are you gonna be able to go to the kinky fuck concert"
+			}, {
+				"text": "OMG LINKIN PARK CONCERT"
+			}
+		]
+	}, {
+		"name": "wrong number",
+		"user": {
+			"name": "+1 435-456-985",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/steno/128.jpg"
+		},
+		"messages": [
+			{
+				"image": "http://i.imgur.com/AVgdfM1.png",
+				"text": "Hey babe, im jus chillin if you wanna come over..."
+			}, {
+
+				"text": "she gave you the wrong number brotha",
+				"you": true
+			}, {
+				"image": "http://i.imgur.com/ihAYrkm.png",
+				"you": true
+			}
+		]
+	}, {
+		"name": "fuck your sister",
+		"user": {
+			"name": "dad",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/dwaldron/128.jpg"
+		},
+		"messages": [
+			{
+
+				"text": "Be quiet when you come in. I am about to fuck your sister in bed."
+			}, {
+
+				"text": "you are about to what!?!?",
+				"you": true
+			}, {
+				"text": "OH I MEANT TUCK! TUCK YOUR SISTER IN BED!"
+			}, {
+
+				"text": "...okay..",
+				"you": true
+			}
+		]
+	}, {
+		"name": "fuck the dogs",
+		"user": {
+			"name": "mikki",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/annapickard/128.jpg"
+		},
+		"messages": [
+			{
+
+				"text": "heyy mom"
+			}, {
+
+				"text": "do the fishes",
+				"you": true
+			}, {
+				"text": "the fishes?"
+			}, {
+
+				"text": "the dishes go do the dishes and fuck the dogs",
+				"you": true
+			}, {
+				"text": "...i don't like them like that"
+			}, {
+
+				"text": "I MEANT FEED!! damn auto corrector",
+				"you": true
 			}
 		]
 	}
