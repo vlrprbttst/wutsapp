@@ -124,19 +124,6 @@ module.exports = function(grunt) {
         }
       }
     },
-    /*
-        php: {
-          dist: {
-            options: {
-              hostname: '127.0.0.1',
-              port: 9000,
-              base: '.', // Project root
-              keepalive: false,
-              open: false
-            }
-          }
-        },
-    */
     ftpush: {
       build: {
         auth: {
@@ -148,6 +135,8 @@ module.exports = function(grunt) {
         dest: '/www/projects/wutsapp/',
         exclusions: [
           '.sass-cache',
+          'readme.md',
+           'bower.json',
           '.DS_Store',
           '.git',
           'images/src',
@@ -161,7 +150,7 @@ module.exports = function(grunt) {
           'sass',
           '_PSD'
         ],
-        //keep : ['blog', 'cv', 'projects', 'prova'],
+        
         simple: false,
         useList: false
       }
@@ -226,32 +215,8 @@ module.exports = function(grunt) {
 
   });
 
-  // load npm tasks
-  /*
-  * Not needed anymore because of 'load-grunt-tasks'
-  *
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-browser-sync');
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-postcss');
-  grunt.loadNpmTasks('grunt-contrib-imagemin'); 
-  grunt.loadNpmTasks('grunt-newer');
-  grunt.loadNpmTasks('grunt-delete-sync');
-  grunt.loadNpmTasks('grunt-php');
-  grunt.loadNpmTasks('grunt-bower-requirejs');
-  grunt.loadNpmTasks('grunt-contrib-requirejs');
-  grunt.loadNpmTasks('grunt-ftpush');
-  */
-
-  // define default task
   grunt.registerTask('default', ["copy:build", "browserSync", "watch"]);
-
-  // define dist task
   grunt.registerTask('dist', ["requirejs:dist", "copy:dist", "browserSync", "watch"]);
-
-  // define dist task
   grunt.registerTask('ftp', ["requirejs:dist", "copy:dist", "ftpush"]);
 
 };
