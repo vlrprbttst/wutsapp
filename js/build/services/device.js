@@ -10,14 +10,18 @@ define(['angular'], function(angular) {
      * Service in the angularjsRequiresjsYeomanTestApp.
      */
     angular.module('wutsapp.services.Device', [])
-        .service('Device', function() {
+        .service('Device', function($window) {
 
             var models = ["nexus6", "s6", "nexus5", "motoX"];
+
 
             var model = models[Math.floor((Math.random() * models.length))];
             var timestamp = (new Date().getTime() - Math.random()*3600000);
             
             this.getModel = function() {
+                if($window.innerHeight <= 800) {
+                    return 'small-device';
+                }
                 return model;
             };
 
