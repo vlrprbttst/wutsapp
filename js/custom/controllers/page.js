@@ -14,7 +14,8 @@ define(['angular', 'services/device'], function(angular) {
             $scope.deviceTimestamp = Device.getTimestamp();
 
             $window.onresize = function() {
-                $scope.deviceModel = Device.getModel();                
+                $scope.deviceModel = Device.getModel();  
+                $scope.$apply();              
             };         
         });
 });
