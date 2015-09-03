@@ -4,7 +4,7 @@ Wutsapp is a collection of funny instant message conversations taken from the we
 Check it out at www.wutsapp.net.
 
 # Contribute
-Please contribute with your funny conversations (either originals or transcribed from the web) with a *Pull Request* or via [email](mailto:omegaiori@gmail.com). The `.json` file with chat conversations
+Please contribute with your funny conversations (either originals or transcribed from the web) with a *Pull Request* or via [email](mailto:omegaiori@gmail.com). The `.json` file with the chat conversations
 is located in `data/chats.json`. Contributions are **much** appreciated!
 
 # Installation
@@ -29,7 +29,7 @@ When you're all set, type `grunt` (or `grunt dist`) - this will open a browser w
 # Credits
 
 - Logo, graphic design, concept, HTML and CSS by [Valerio Pierbattista](http://valeriopierbattista.com).
-- ...... by [Patrizio Munzi](https://www.linkedin.com/in/patriziomunzi).
+- Javascript (AngularJS for MVC, RequireJS for AMD, etc.) by [Patrizio Munzi](https://www.linkedin.com/in/patriziomunzi).
 
 ## Conversations
 
@@ -47,6 +47,6 @@ search queries such as: instant message fails, chat fails etc.
 
 - [User Inter Faces](http://uifaces.com/)
 
-## Whatsapp graphics
+## Whatsapp official graphics
 
 Whatsapp official graphics downloaded from [http://media.whatsapp.com/graphics](http://media.whatsapp.com/graphics)
