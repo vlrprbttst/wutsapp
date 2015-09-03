@@ -26,10 +26,26 @@ then on the root of Wutsapp folder, type
 When you're all set, type `grunt` (or `grunt dist`) - this will open a browser window with Wutsapp running. Most of the changes (scss, js, html etc.) will autorefresh the browser window.
 
 # Credits
+
+Logo, graphic design, concept, HTML and CSS by [Valerio Pierbattista](http://valeriopierbattista.com).
+...... by [Patrizio Munzi](https://www.linkedin.com/in/patriziomunzi).
+
 ## Conversations
 
-The conversations are manually trascribed from popular random websites like cheezburger, facebook, google images or similar sources using
+The conversations are manually trascribed from popular random websites like Cheezburger, Facebook, Google Images or similar sources using
 search queries such as: instant message fails, chat fails etc.
 
-## Devices
-- [Samsung Galaxy S Plus](http://lutschgabriel.deviantart.com/art/Samsung-Galaxy-S-Plus-PSD-436357152);
+## Device Mockups
+- [Samsung Galaxy S Plus](http://lutschgabriel.deviantart.com/art/Samsung-Galaxy-S-Plus-PSD-436357152)
+- [Nexus 6](http://graphicburger.com/nexus-6-psd-mockup/)
+- [Nexus5](https://dribbble.com/shots/1989188-Nexus-5-Mockup)
+- [MotoX](https://dribbble.com/shots/2164396-Freebie-Moto-X-Free-PSD)
+- [Samsung S6](http://emske.com/samsung-galaxy-s6-psd-mock-up/)
+
+## Chat heads
+
+- [User Inter Faces](http://uifaces.com/)
+
+## Whatsapp graphics
+
+Whatsapp official graphics downloaded from [http://media.whatsapp.com/graphics](http://media.whatsapp.com/graphics)
