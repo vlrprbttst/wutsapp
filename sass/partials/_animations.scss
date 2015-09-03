@@ -13,21 +13,6 @@
 }
 
 
-@keyframes overlay-reverse {
-  1% {
-    opacity: 1;
-    display: block;
-
-  }
-  99% {
-    display: block;
-    opacity:0;
-  }
-  100% {
-    display: none;
-    opacity: 0;
-  }
-}
 
 @keyframes card {
   0% {
@@ -53,29 +38,7 @@
   }
 }
 
-@keyframes card-reverse {
-  0% {
-    transform:scale(1);opacity: 1;display: block;
-  }
-  
-  1% {
-    transform:scale(1.05);opacity: 1;display: block;
-  }
-  30% {
-    opacity: 1;
-    transform:scale(0);display: block;
-  }
-  99% {
-    display: block;
-    opacity: 0;
-    transform:scale(0);
-  }
-  100% {
-    display: none;
-    opacity: 0;
-  }
-  
-}
+
 
 @keyframes status {
   0% {
@@ -114,5 +77,18 @@
    
   }
 
+  
+}
+
+@keyframes new {
+  
+  0%{
+    transform:rotate(0)
+  }
+  
+  100% {
+    transform:rotate(360deg)
+  }
+  
   
 }

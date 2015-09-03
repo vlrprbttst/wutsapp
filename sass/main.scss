@@ -117,16 +117,18 @@ $loader:60px;
 
 .new-link {
     @include unstyled-link;
+    left: 50px;
+    top: 205px;
+    position: absolute;
+    
 }
 
 .new {
-    left: 20px;
-    bottom: 20px;
-    position: absolute;
+    
     background: white;
     text-align: center;
     font-size: 18px;
-    padding: 10px 20px;
+    padding: 15px 25px;
     text-transform: uppercase;
     border-bottom: 5px solid darken(#fff, 20%);
     cursor: pointer;
@@ -457,6 +459,7 @@ footer {
     bottom: 0;
     right: 0;
     text-align: center;
+    font-size:14px;
     line-height: 22px;
     color: #fff;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
