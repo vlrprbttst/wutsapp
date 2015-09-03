@@ -12,5 +12,8 @@ define(['angular', 'services/device'], function(angular) {
         .controller('PageCtrl', function($scope, $window, Device) {
             $scope.deviceModel = Device.getModel();
             $scope.deviceTimestamp = Device.getTimestamp();
+            if($window.innerHeight <= 800) {
+                $scope.pageSize = 'small-device';
+            }
         });
 });

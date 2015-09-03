@@ -36,7 +36,7 @@
     <div class="conversation">
         <div class="balloon " ng-repeat="message in chat.messages" ng-class="message.you ? 'you' : 'him'">
             <img ng-src="{{message.image}}" ng-if="message.image" />
-            {{message.text}}<span ng-if="message.text" class="data" ng-class="{'blue': message.you}">{{message.timestamp | date: 'shortTime'}}</span>
+            {{message.text}}<span ng-if="message.text || message.image" class="data" ng-class="{'blue': message.you}">{{message.timestamp | date: 'shortTime'}}</span>
         </div>
     </div>
     <!-- conversation end -->
