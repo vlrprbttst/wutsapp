@@ -4,7 +4,8 @@ Wutsapp is a collection of funny instant message conversations taken from the we
 Check it out at www.wutsapp.net.
 
 # Contribute
-Please contribute with your funny conversations (either originals or transcribed from ones you find on the web) with a *Pull Request* or via [email](mailto:omegaiori@gmail.com).
+Please contribute with your funny conversations (either originals or transcribed from the web) with a *Pull Request* or via [email](mailto:omegaiori@gmail.com). The `.json` file with chat conversations
+is located in `data/chats.json`. Contributions are **much** appreciated!
 
 # Installation
 To run Wutsapp locally, you will need [NodeJS](https://nodejs.org/en/) installed on your system, but also Bower, Grunt, Sass and Compass. If you are on Windows, you'll need to install [Ruby](http://rubyinstaller.org/downloads/) as well. After you have installed Node, clone the repository and install **Bower** with
@@ -27,8 +28,8 @@ When you're all set, type `grunt` (or `grunt dist`) - this will open a browser w
 
 # Credits
 
-Logo, graphic design, concept, HTML and CSS by [Valerio Pierbattista](http://valeriopierbattista.com).
-...... by [Patrizio Munzi](https://www.linkedin.com/in/patriziomunzi).
+- Logo, graphic design, concept, HTML and CSS by [Valerio Pierbattista](http://valeriopierbattista.com).
+- ...... by [Patrizio Munzi](https://www.linkedin.com/in/patriziomunzi).
 
 ## Conversations
 
