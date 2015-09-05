@@ -788,7 +788,7 @@
 		},
 		"messages": [
 			{
-				"text": "how do I tell christ i like him though? these things are hard"
+				"text": "how do I tell chris i like him though? these things are hard"
 			}, {
 
 				"text": "you just did ;)",
@@ -807,7 +807,7 @@
 				"you": true
 			}
 		]
-	},{
+	}, {
 		"name": "im pregnant",
 		"user": {
 			"name": "Babe",
@@ -827,6 +827,212 @@
 			}, {
 				"text": "The AT&T subscriber *you are trying to reach is no longer in service",
 				"you": true
+			}
+		]
+	}, {
+		"name": "busy",
+		"user": {
+			"name": "Le BF",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/darrellwhitelaw/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "hey wanna do something tonight?"
+			}, {
+
+				"text": "oh sorry i'm busy..",
+				"you": true
+			}, {
+
+				"text": "doing what?"
+			}, {
+				"text": "I'm.. looking for my phone",
+				"you": true
+			}, {
+
+				"text": "oh okay"
+			}, {
+
+				"text": "wait.."
+			}
+		]
+	}, {
+		"name": "break up",
+		"user": {
+			"name": "+44 20 7946 0326",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/ekvium/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "I want to break up with you"
+			}, {
+
+				"text": "sorry wrong number"
+			}
+		]
+	}, {
+		"name": "wrong person",
+		"user": {
+			"name": "Daniel",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/marcosmoralez/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "Can we do 11am tomorrow?"
+			}, {
+
+				"text": "can't wait for us to be naked and making love xx xxxx xxx xx xo"
+			}, {
+
+				"text": "shit sorry, wrong person"
+			}
+		]
+	}, {
+		"name": "creepy dave",
+		"user": {
+			"name": "Dave",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/kurafire/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "dude you wanna come over tonight and masturbate? got a brand new porno!"
+			}, {
+
+				"text": "ahahah! damn autocorrect uh? yeah it's annoying",
+				"you": true
+			}, {
+
+				"text": "no i'm serious"
+			}, {
+				"text": "you sure?",
+				"you": true
+			}, {
+
+				"text": "yea"
+			}, {
+
+				"text": "yeah, we're not friends anymore and btw.. this is going on the internet",
+				"you": true
+			}
+		]
+	}, {
+		"name": "spelling contest",
+		"user": {
+			"name": "Katie",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/whale/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "OMG can you belive i won the speling contest!?!? i won with full honers and a scolorship!!"
+			}, {
+
+				"text": "believe.spelling.scholarship. how the hell did you win the contest?",
+				"you": true
+			}, {
+
+				"text": "i have no clue"
+			}
+		]
+	}, {
+		"name": "spice girls",
+		"user": {
+			"name": "Momma",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/_everaldo/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "what do you want for dinner?"
+			}, {
+				"text": "I'LL TELL YOU WHAT I WANT WHAT I REALLY REALLY WANT",
+				"you": true
+			}, {
+
+				"text": "SO TELL ME WHAT YOU WANT WHAT YOU REALLY REALLY WANT"
+			}, {
+
+				"text": "ahahahah best mom ever. pizza'd be awesome please.",
+				"you": true
+			}
+		]
+	}, {
+		"name": "so drunk",
+		"user": {
+			"name": "Friend",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/alexmarin/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "dude you were so drunk last night!"
+			}, {
+				"text": "no i wasn't",
+				"you": true
+			}, {
+
+				"text": "you asked your girlfriend if she was single...."
+			}, {
+
+				"text": "well what did she say?",
+				"you": true
+			}, {
+
+				"text": "she said yes!"
+			}
+		]
+	}, {
+		"name": "prisoners",
+		"user": {
+			"name": "Mom",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/allisongrayce/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "mom there's no food in the house",
+				"you": true
+			}, {
+
+				"text": "not even bread",
+				"you": true
+			}, {
+
+				"text": "even prisoners get bread...",
+				"you": true
+			}
+		]
+	}, {
+		"name": "new phone",
+		"user": {
+			"name": "Britt",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/choblab/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "hey are you still coming over tonight?"
+			}, {
+				"text": "no i can't i'm blowing my dad tonight.",
+				"you": true
+			}, {
+
+				"text": "i meant sucking!",
+				"you": true
+			}, {
+
+				"text": "i meant fucking!",
+				"you": true
+			}, {
+
+				"text": "ah! fuck this, i'm getting a new phone.",
+				"you": true
+			},{
+				"text": "this is going on wutsapp.net"
 			}
 		]
 	}
