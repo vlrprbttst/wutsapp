@@ -16,7 +16,7 @@ define(['angular'], function(angular) {
 
 
             var model = models[Math.floor((Math.random() * models.length))];
-            var timestamp = (new Date().getTime() - (Math.random() + 1)*3600000);
+            var timestamp = new Date().getTime();
             
             this.getModel = function() {
                 if($window.innerHeight <= 800) {

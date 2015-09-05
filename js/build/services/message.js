@@ -7,7 +7,7 @@ define(['angular','services/device'], function(angular) {
                 this.text = json.text;
                 this.image = json.image;
                 this.you = json.you;
-                this.timestamp = Device.getTimestamp() + (Math.random() + this.id) * 60000;
+                this.timestamp = Device.getTimestamp() - (Math.random() + this.id) * 60000;
             };
 
             return Message;
