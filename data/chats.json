@@ -1031,8 +1031,123 @@
 
 				"text": "ah! fuck this, i'm getting a new phone.",
 				"you": true
-			},{
+			}, {
 				"text": "this is going on wutsapp.net"
+			}
+		]
+	}, {
+		"name": "finding the phone",
+		"user": {
+			"name": "jon",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/azielsilas/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "why aren't you answering?"
+			}, {
+				"text": "sorry i dropped my phone and i can't find it. I'll text you when i find it",
+				"you": true
+			}, {
+
+				"text": "ok"
+			}, {
+
+				"text": "you find it yet?"
+			}, {
+
+				"text": "no",
+				"you": true
+			}, {
+				"text": "okay let me know when you do."
+			}
+		]
+	}, {
+		"name": "josh and anna",
+		"user": {
+			"name": "Josh",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "Hey sexy 8)"
+			}, {
+				"text": "uhm this is Anna. I'm pretty sure that was meant for kellie. you know.. your girlfriend?",
+				"you": true
+			}, {
+
+				"text": "nope. it was meant for you ;)"
+			}, {
+
+				"text": "well that changes things doesn't it? ahah",
+				"you": true
+			}, {
+
+				"text": "eheheh i won't tell if you don't tell :)"
+			}, {
+				"text": "I don't have to tell. Kellie is reading this over my shoulder.",
+				"you": true
+			}
+		]
+	}, {
+		"name": "dude from tinder",
+		"user": {
+			"name": "dude from tinder",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/marcosmoralez/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "did you fall from heaven?"
+			}, {
+				"text": "because.. have sex with me?"
+			}, {
+				"text": "Sorry I didn't suffer a head injury during the fall",
+				"you": true
+			}
+		]
+	}, {
+		"name": "pot",
+		"user": {
+			"name": "Friend",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/danbenoni/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "did you really assume i sell pot just because i'm fucking black?"
+			}, {
+				"text": "no",
+				"you": true
+			}, {
+				"text": "...yes",
+				"you": true
+			}, {
+				"text": "Lol i do tho how much u need?"
+			}
+		]
+	}, {
+		"name": "mcdonald and priests",
+		"user": {
+			"name": "Amanda",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/vnulab/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "What do mcdonalds and priests have in common?",
+				"you": true
+			}, {
+				"text": "What?"
+			}, {
+				"text": "they both stick their meat in 10 year old buns!?",
+				"you": true
+			}, {
+				"text": "do you know i'm catholic ahah"
+			},{
+				"text": "great!!! i hate using condoms too!",
+				"you": true
 			}
 		]
 	}
