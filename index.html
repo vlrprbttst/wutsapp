@@ -33,10 +33,17 @@
     <base href="/">
 </head>
 
-<body ng-app="wutsapp" class="mobile">
+<body ng-app="wutsapp">
     <div id="preloader" ng-show="!loaded">
         <div id="status"></div>
     </div>
+    
+    <div class="mobile-alert">
+    	<div class="mobile-alert-msg">
+    		
+    	</div>
+    </div>
+    
     <div class="page" ng-controller="PageCtrl" ng-cloak ng-class="deviceModel">
     	<header>
         <div class="sharingiscaring">

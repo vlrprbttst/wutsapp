@@ -6,6 +6,7 @@
 @import "partials/_animations.scss";
 @import "partials/_phones.scss";
 
+
 html {
     box-sizing: border-box;
     height: 100%;
@@ -494,4 +495,10 @@ header {
     height: calc(100% - 81px);
 }
 
+
+
 @import "partials/_mobile.scss";
+
+.mobile-alert {
+  display: none;
+}
