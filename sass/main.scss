@@ -5,6 +5,7 @@
 @import "partials/_normalize.scss";
 @import "partials/_animations.scss";
 @import "partials/_phones.scss";
+
 html {
     box-sizing: border-box;
     height: 100%;
@@ -25,32 +26,7 @@ body {
     height: 100%;
 }
 
-.logo {
-    width: 300px;
-    position: fixed;
-    top: 60px;
-    left: 20px;
-    p {
-        color: darken(#fff, 15%);
-        margin: 0 auto;
-        padding: 5px 10px 0;
-        line-height: 22px;
-        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-        font-weight: 300;
-        text-align: center;
-        a,
-        a:visited {
-            color: darken(#fff, 15%);
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    }
-    img {
-        width: 100%;
-    }
-}
+
 
 
 .page {
@@ -115,30 +91,7 @@ $loader:60px;
     top: 50%;
 }
 
-.new-link {
-    @include unstyled-link;
-    left: 50px;
-    top: 205px;
-    position: absolute;
-    
-}
 
-.new {
-    
-    background: white;
-    text-align: center;
-    font-size: 18px;
-    padding: 15px 25px;
-    text-transform: uppercase;
-    border-bottom: 5px solid darken(#fff, 20%);
-    cursor: pointer;
-    border-radius: 25px;
-    &:hover {
-        background: darken(#fff, 10%);
-        border-bottom: 5px solid darken(#fff, 30%);
-        text-shadow: 0 1px 0 white;
-    }
-}
 
 .wa {
     &-container {
@@ -478,19 +431,67 @@ footer {
     }
 }
 
-.fb-like {
-    position: relative;
-    top: -4px;
-}
-
-.sharingiscaring {
+header {
+  
     position: fixed;
     top: 20px;
     left: 20px;
-    overflow: visible;
     z-index: 999;
+    
+    
+    .fb-like {
+        position: relative;
+        top: -4px;
+    }
+    
+    .logo {
+    width: 300px;
+    padding:20px 0 ;
+    p {
+        color: darken(#fff, 15%);
+        margin: 0 auto;
+        padding: 5px 10px 0;
+        line-height: 22px;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 300;
+        text-align: center;
+        a,
+        a:visited {
+            color: darken(#fff, 15%);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+    img {
+        width: 100%;
+    }
+}//logo
+
+.new-link {@include unstyled-link;}
+
+.new {
+    
+    background: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    border-bottom: 5px solid darken(#fff, 20%);
+    cursor: pointer;
+    border-radius: 25px;
+    &:hover {
+        background: darken(#fff, 10%);
+        border-bottom: 5px solid darken(#fff, 30%);
+        text-shadow: 0 1px 0 white;
+    }
 }
+    
+}//header 
 
 .wrapperchat {
     height: calc(100% - 81px);
 }
+
+@import "partials/_mobile.scss";

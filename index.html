@@ -12,7 +12,7 @@
     <title>Wutsapp</title>
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
     <meta name="description" content="WUTsapp is a collection of funny chat conversations.">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- facebook -->
     <meta property="og:url" content="http://www.wutsapp.net" />
     <meta property="og:type" content="website" />
@@ -33,11 +33,12 @@
     <base href="/">
 </head>
 
-<body ng-app="wutsapp">
+<body ng-app="wutsapp" class="mobile">
     <div id="preloader" ng-show="!loaded">
         <div id="status"></div>
     </div>
     <div class="page" ng-controller="PageCtrl" ng-cloak ng-class="deviceModel">
+    	<header>
         <div class="sharingiscaring">
             <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=WUTsapp%20is%20a%20collection%20of%20funny%20chat%20conversations" data-size="small" style="padding:0 5px 0 0"> Tweet</a>
             <div class="fb-like" data-href="http://www.wutsapp.net" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
@@ -53,6 +54,7 @@
                 <i class="zmdi zmdi-refresh-alt"></i> new conversation
             </div>
         </a>
+        </header>
         <div class="phone">
             <div class="wa-container">
                 <div class="status-bar">
