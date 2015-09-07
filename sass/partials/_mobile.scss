@@ -1,0 +1,146 @@
+
+@media screen and (max-width:768px) and (orientation:portrait) {
+  
+  header {
+    top:10px;
+    left:10px;
+    width: 100%;
+    padding:0 20px 0 0;
+    
+    .sharingiscaring {float: right; }
+    
+    .fb-like {
+        position: relative;
+        top: -4px;
+    }
+    
+    .logo {
+    padding:15px 0 0 15px;
+    float: left;
+    width:350px;
+    p {display: none;}
+
+    
+}//logo
+
+.new-link {float: right;padding:10px 0 0 0; }
+    
+}//header 
+} //ipad portrait
+
+
+html.touch {
+@media all and (orientation:landscape) {
+ 
+ .mobile-alert {
+   display:block;
+   width: 100%;
+   height: 100%;
+   background:#333;
+   position:fixed;
+   z-index:99999;
+   
+   .mobile-alert-msg {
+     @include absolute-center-absolute;
+     width: 263px;
+     height: 253px;
+     background:url("../images/dist/flip.png") center bottom no-repeat;
+     background-size:80%;
+     text-align: center;
+     
+     &:after {
+       color:white;
+       content:"please flip your device to portrait"
+     }
+   }
+ } 
+}
+}
+
+@media all and (max-width:600px) and (orientation:portrait) {
+  
+  header {
+    height:31px;
+    position: static;
+    @include clearfix;
+    padding:5px 5px 0;
+    background:black;
+    
+    .sharingiscaring {float: right; display: none; }
+    
+    .fb-like {
+        position: relative;
+        top: -4px;
+    }
+    
+    .logo {
+    width: auto;
+    padding:0;
+    float: left;
+    
+    p {display: none;}
+    img {width: 100px;}
+    
+}//logo
+
+.new-link {float: right;color:white;padding:0; }
+
+.new {
+    font-size: 14px;
+    padding: 0 5px;
+    line-height:21px;
+    background:#111;
+    border: 1px solid white;
+    border-radius:0;
+    &:hover {
+      text-shadow: none;
+      background:#111;
+      border: 1px solid white;
+    }
+}
+    
+}//header 
+
+.page {
+      height: calc(100% - 42px);
+}
+
+.bottom-bar,
+.status-bar {display: none; }
+
+.phone {
+  background-image:none !important;
+  background-size:auto !important;
+  height: calc(100% - 7px)!important;
+}
+  .wa-container {
+  position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 0 !important;
+    width: 100% !important;
+        height: 100% !important;
+  }
+  
+footer {
+    position: static;
+    bottom: auto;
+    right: auto;
+    line-height: 16px;
+    width: 100%;
+    background:black;
+    padding:5px;
+    font-size:12px;
+    height:42px;
+    br {display: none;}
+}
+
+.user-name {
+    width: 125px !important;
+}
+  
+  
+}//max width portrait 600px
+
+
