@@ -187,6 +187,7 @@ $loader:60px;
             .conversation {
                 width: 100%;
                 overflow: auto;
+                -webkit-overflow-scrolling:touch;
                 height: calc(100% - 68px);
                 padding: 0 16px;
                 @include clearfix;
@@ -267,6 +268,7 @@ $loader:60px;
             } //balloon
             .textarea {
                 width: 100%;
+                margin: 0;
                 z-index: 2;
                 left: 0;
                 position: absolute;
@@ -373,19 +375,17 @@ $loader:60px;
                     position: absolute;
                     left: 50%;
                     top: 50%;
-                    margin: -35px 0 0 -160px;
+                    transform: translate(-50%,-50%);
                     display: block;
                     background: white;
-                    width: 320px;
+                    width: 300px;
                     height: 70px;
                     padding: 16px;
                     border-radius: 2px;
                     box-shadow: 0 0 20px rgba(0, 0, 0, .4);
                     @include clearfix;
-                    animation: card 1s forwards cubic-bezier(0.86, 0, 0.07, 1);
-                    &.reverse {
-                        animation: card-reverse 1s forwards cubic-bezier(0.86, 0, 0.07, 1);
-                    }
+                    animation: card 1s .1s forwards cubic-bezier(0.86, 0, 0.07, 1);
+                   
                     .left {
                         width: 85%;
                         float: left;
