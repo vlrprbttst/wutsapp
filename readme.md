@@ -54,3 +54,6 @@ search queries such as: instant message fails, chat fails etc.
 ## Icons
 
 - [Material Design Iconic Font](http://zavoloklom.github.io/material-design-iconic-font/)
+
+# Disclaimer
+All brand icons are trademarks of their respective owners. The use of these trademarks does not indicate endorsement of the trademark holder by WUTsapp, nor vice versa.
