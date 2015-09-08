@@ -1145,8 +1145,442 @@
 				"you": true
 			}, {
 				"text": "do you know i'm catholic ahah"
-			},{
+			}, {
 				"text": "great!!! i hate using condoms too!",
+				"you": true
+			}
+		]
+	}, {
+		"name": "eric is gay",
+		"user": {
+			"name": "Eric",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "OMG, guess what Eric just told me!"
+			}, {
+				"text": "wat?",
+				"you": true
+			}, {
+				"text": "he's gay!! but dont let on I told you. he said not to tell anyone yet."
+			}, {
+				"text": "i already knew",
+				"you": true
+			}, {
+				"text": "You did?"
+			}, {
+				"text": "yeah check the name bitch",
+				"you": true
+			}
+		]
+	}, {
+		"name": "gay porn",
+		"user": {
+			"name": "Mom",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/allisongrayce/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "George! I just checked your log, and ive been seeing A LOT of adult websites! come home NOW!!!"
+			}, {
+				"text": "Yeah i've been noticing that lately too it must be a virus or something",
+				"you": true
+			}, {
+				"text": "oh ok hun ;)"
+			}, {
+				"text": "Dude my mom almost caught me watching gay porn!!",
+				"you": true
+			}, {
+				"text": "come home now george!!!!"
+			}
+		]
+	}, {
+		"name": "fathers day present",
+		"user": {
+			"name": "Dad",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/spjpgrd/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "Happy fathers day dad!!! ive got a special present for you!!!",
+				"you": true
+			}, {
+				"text": "thanks and what's the present??"
+			}, {
+				"text": "A new baby boy!!",
+				"you": true
+			}, {
+				"text": "YOUNG LADY GET YOUR ASS HOME NOW!!!!!"
+			}
+		]
+	}, {
+		"name": "straight or curly",
+		"user": {
+			"name": "+44 345-666-754",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/bramk/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "heyyyy guess who????"
+			}, {
+				"text": "WHO??!!!",
+				"you": true
+			}, {
+				"text": "Dylan from school"
+			}, {
+				"text": "ohhhh hey dylan!! are you the curly or straight one???",
+				"you": true
+			}, {
+				"text": "omg how did you find out that im gay?!?!"
+			}, {
+				"text": "I was talking about hair dylan..",
+				"you": true
+			}
+		]
+	}, {
+		"name": "game",
+		"user": {
+			"name": "BFF",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/skeletonkey/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "random game, u start"
+			}, {
+				"text": "fish",
+				"you": true
+			}, {
+				"text": "Duck"
+			}, {
+				"text": "i fucked your sister last night ...",
+				"you": true
+			}, {
+				"text": "WTF MAN!!! ALL I WANTED TO SAY WAS HAPPY BIRTHDAY.."
+			}, {
+				"text": "autocorrect? :/",
+				"you": true
+			}
+		]
+	}, {
+		"name": "invites",
+		"user": {
+			"name": "Sean Mid.",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/jpfaraco/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "HEY! why did you ask my EX out!? you are my best friend you little douche!"
+			}, {
+				"text": "I didn't ask her out.. I invited her in.",
+				"you": true
+			}, {
+				"text": "In where..?"
+			}, {
+				"text": "My bed.",
+				"you": true
+			}
+		]
+	}, {
+		"name": "she died",
+		"user": {
+			"name": "tommy",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/3en/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "She had them apple bottom jeans (jeans)"
+			}, {
+				"text": "Boots with the fur (with the fur)",
+				"you": true
+			}, {
+				"text": "the whole club was looking at her"
+			}, {
+				"text": "She hit the floor (she hit the floor)",
+				"you": true
+			}, {
+				"text": "OMG is she ok!?"
+			}, {
+				"text": "No she died lmao",
+				"you": true
+			}
+		]
+	}, {
+		"name": "nugget",
+		"user": {
+			"name": "Mom",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/ludensk/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "Hi mum",
+				"you": true
+			}, {
+				"text": "nugget emily"
+			}, {
+				"text": "nugget"
+			}, {
+				"text": "not nugget"
+			}, {
+				"text": "nugget "
+			}, {
+				"text": "!???"
+			}, {
+				"text": "you're a wreck",
+				"you": true
+			}, {
+				"text": "did you do this!?"
+			}
+		]
+	}, {
+		"name": "moth",
+		"user": {
+			"name": "Dad",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/tajim/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "dad there's a moth on the outside of the bathroom door can you get rid of it?",
+				"you": true
+			}, {
+				"text": "Pls hurry I'm going to cry",
+				"you": true
+			}, {
+				"text": "dad",
+				"you": true
+			}, {
+				"text": "dad",
+				"you": true
+			}, {
+				"text": "Dad is dead.. you're next. Love, Moth"
+			}
+		]
+	}, {
+		"name": "gay dad",
+		"user": {
+			"name": "Dad",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/tajim/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "I'm gay"
+			}, {
+				"text": "I'm not gay your mother took my phone"
+			}
+		]
+	}, {
+		"name": "Grandma",
+		"user": {
+			"name": "Grandma",
+			"status": "online now",
+			"image": "http://i.imgur.com/RatjFou.png"
+		},
+		"messages": [
+			{
+				"text": "Heard you got an iPhone, if you need any help with it don't hesitate to call me. Hope all is well, love. Leon",
+				"you": true
+			}, {
+				"text": "polM                                                        .8"
+			}, {
+				"text": "       v"
+			}, {
+				"text": "   "
+			}, {
+				"text": "Don't worry, it takes some time to learn how to text! practice makes perfect",
+				"you": true
+			}, {
+				"text": "Oklahoma"
+			}
+		]
+	}, {
+		"name": "Grandma 2",
+		"user": {
+			"name": "Grandma",
+			"status": "online now",
+			"image": "http://i.imgur.com/RatjFou.png"
+		},
+		"messages": [
+			{
+				"text": "Heard you got an iPhone,  how do you like it???",
+				"you": true
+			}, {
+				"text": "Massachussets"
+			}
+		]
+	}, {
+		"name": "Missing oreo",
+		"user": {
+			"name": "Jake",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/jeremylv/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "I miss you a lot Sierra"
+			}, {
+				"text": "You know what I miss?",
+				"you": true
+			}, {
+				"text": "Oreo cereal",
+				"you": true
+			}, {
+				"text": "What? please be serious"
+			}, {
+				"text": "where do they sell that at",
+				"you": true
+			}
+		]
+	}, {
+		"name": "catdog",
+		"user": {
+			"name": "+1 (228) 382-6...",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/rafaelks/128.jpg"
+		},
+		"messages": [
+			{
+				"image": "http://animal-world.com/dogs/Toy-Dog-Breeds/images/Chihuahua(Long)WDTo_AcD106.jpg"
+			}, {
+				"text": "who is this?",
+				"you": true
+			}, {
+				"image": "https://www.expatads.com/adpics1/2014/2/looking-for-male-Chihuahua-long-hair-for-matting52ede88a878a5b426a41.jpg"
+			}, {
+				"text": "stop sending me pictures of a cat",
+				"you": true
+			}
+		]
+	}, {
+		"name": "where to buy avocado",
+		"user": {
+			"name": "Mom",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/littlenono/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "how make chicken"
+			}, {
+				"text": "what",
+				"you": true
+			}, {
+				"text": "where buy chicken"
+			}, {
+				"text": "mom this isn't google",
+				"you": true
+			}, {
+				"text": "avacoda"
+			}
+		]
+	}, {
+		"name": "lightly fried fish fillets",
+		"user": {
+			"name": "Dad",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/philiplocke/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "there's lightly fried fish fillets for dinner"
+			}, {
+				"text": "dad it's 1.15am wtf",
+				"you": true
+			}, {
+				"text": "do you want the lightly fried fish fillets or not?"
+			}, {
+				"text": "well i mean.. yea",
+				"you": true
+			}, {
+				"text": "Mhm thought so come on downstairs they're still hot"
+			}, {
+				"text": "wait what did you just make them?",
+				"you": true
+			}, {
+				"text": "yes i wasn't tired so I decided to make some lightly fried fish fillets"
+			}, {
+				"text": "say lightly fried fish fillets one more time dad",
+				"you": true
+			}
+		]
+	}, {
+		"name": "dirty pic",
+		"user": {
+			"name": "Kelly",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/littlenono/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "nite"
+			}, {
+				"text": "love u"
+			}, {
+				"text": "luv u2 in bed now",
+				"you": true
+			}, {
+				"text": "send me a dirty pic",
+				"you": true
+			}, {
+				"text": "need inspiration",
+				"you": true
+			}, {
+				"image": "http://tiptaptip.com/wp-content/uploads/2012/03/dish.jpg"
+			}
+		]
+	}, {
+		"name": "cantaloupe",
+		"user": {
+			"name": "+1 (508) 361-2...",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/waferbaby/128.jpg"
+		},
+		"messages": [
+			{
+				"image": "http://thethriftycouple.com/wp-content/uploads/2012/09/giant-cantaloupe-982.jpg"
+			}, {
+				"text": "look at the size of this cantaloupe"
+			}, {
+				"text": "wtf who is this?!?!",
+				"you": true
+			}
+		]
+	}, {
+		"name": "its dark",
+		"user": {
+			"name": "Kira",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/nikkitaftw/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "what are you doing?"
+			}, {
+				"text": "laying in my bed",
+				"you": true
+			}, {
+				"text": "naked?"
+			}, {
+				"text": "yes",
+				"you": true
+			},{
+				"text": "show me"
+			}, {
+				"text": "it's dark",
+				"you": true
+			}, {
+				"text": "i don't care"
+			}, {
+				"image": "http://i.imgur.com/VCCBjE4.png",
 				"you": true
 			}
 		]
