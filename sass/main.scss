@@ -414,19 +414,14 @@ footer {
     right: 0;
     text-align: center;
     font-size:14px;
-    line-height: 20px;
+    line-height: 16px;
     color: #fff;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
     padding: 0 10px 10px;
     @include clearfix;
     width:320px;
-    
-    span {
-      font-size:12px;
-      line-height:16px;
-      display: block;
-    }
+
     
     i {
         padding: 0 5px 0 0;
