@@ -61,7 +61,7 @@ html.touch {
 @media all and (max-width:600px) and (orientation:portrait) {
   
   header {
-    height:31px;
+    height:$mobile-header-h;
     position: static;
     @include clearfix;
     padding:5px 5px 0;
@@ -76,34 +76,32 @@ html.touch {
     
     .logo {
     width: auto;
-    padding:0;
+    padding:3px 0 0 0;
     float: left;
     
     p {display: none;}
-    img {width: 100px;}
+    img {width: 128px;}
     
 }//logo
 
-.new-link {float: right;color:white;padding:0; }
+.new-link {float: right;padding:0; }
 
 .new {
     font-size: 14px;
-    padding: 0 5px;
-    line-height:21px;
-    background:#111;
-    border: 1px solid white;
-    border-radius:0;
-    &:hover {
-      text-shadow: none;
-      background:#111;
-      border: 1px solid white;
-    }
+    padding: 3px 10px;
+    line-height:24px;
+    border-bottom-width:3px;
+   &:hover {
+     background: white;
+     border-bottom-width:3px;
+     border-bottom-color:darken(#fff, 20%);
+   }
 }
     
 }//header 
 
 .page {
-      height: calc(100% - 42px) !important;
+      height: calc(100% - #{$mobile-footer-h}) !important;
 }
 
 .bottom-bar,
@@ -112,7 +110,7 @@ html.touch {
 .phone {
   background-image:none !important;
   background-size:auto !important;
-  height: calc(100% - 7px)!important;
+      height: calc(100% - 42px);
 }
   .wa-container {
   position: static;
@@ -120,10 +118,11 @@ html.touch {
     left: auto;
     transform: none;
     margin: 0 !important;
+    padding: 0 !important;
     width: 100% !important;
         height: 100% !important;
   }
-  
+
 footer {
     position: static;
     bottom: auto;
@@ -133,7 +132,7 @@ footer {
     background:black;
     padding:5px;
     font-size:12px;
-    height:42px;
+    height:$mobile-footer-h;
     br {display: none;}
 }
 
@@ -174,5 +173,28 @@ html.no-csscalc {
 }
 
 } // no css calc
+
+
+
+
+
+
+
+
+@media all and (max-width:600px) and (orientation:portrait) {
+
+.page {
+    .wrapperchat {
+    height: calc(100% - 1px) !important;
+}
+}
+
+.page.small-device {
+  .wrapperchat {
+    height: calc(100% - 58px) !important;
+}
+}
+
+}
 
 
