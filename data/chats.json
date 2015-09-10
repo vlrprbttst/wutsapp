@@ -1572,7 +1572,7 @@
 			}, {
 				"text": "yes",
 				"you": true
-			},{
+			}, {
 				"text": "show me"
 			}, {
 				"text": "it's dark",
@@ -1582,6 +1582,213 @@
 			}, {
 				"image": "http://i.imgur.com/VCCBjE4.png",
 				"you": true
+			}
+		]
+	}, {
+		"name": "so drunk",
+		"user": {
+			"name": "Sonny",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/peterlandt/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "Help"
+			}, {
+				"text": "M DRINK"
+			}, {
+				"text": "what do you want me to do? more drinks?",
+				"you": true
+			}, {
+				"text": "same me"
+			}, {
+				"text": "I'm too funk"
+			}, {
+				"text": "IM SO SRUNK"
+			}, {
+				"text": "Nope you can still type. not drunk enough!!!",
+				"you": true
+			}, {
+				"text": "help me p"
+			}, {
+				"text": "please don't die",
+				"you": true
+			}
+		]
+	}, {
+		"name": "so drunk 2",
+		"user": {
+			"name": "Jerome",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/tonystubblebine/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "lol was I that drunk?"
+			}, {
+				"text": "well you dug up my mom's garden",
+				"you": true
+			}, {
+				"text": "because, and I quote, 'fuck farmville'",
+				"you": true
+			}
+		]
+	}, {
+		"name": "so drunk 3",
+		"user": {
+			"name": "Emily Rose",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/skeletonkey/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "Julia. I'm drunk. I LOVE YOU!"
+			}, {
+				"text": "I love you too but I'm sober.",
+				"you": true
+			}, {
+				"text": "JULIA YOU're AMAZING!!!"
+			}, {
+				"text": "you know my loyalty. you know my love. what else is there?"
+			}, {
+				"text": "i throw my handsvup in the air sometimes"
+			}
+		]
+	}, {
+		"name": "finger view",
+		"user": {
+			"name": "Mother",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/andina/128.jpg"
+		},
+		"messages": [
+			{
+				"image": "http://i.imgur.com/EanNVoQ.png"
+			}, {
+				"text": "It's a beautiful day! wish u were here! just look at this view!"
+			}, {
+				"text": "Mom, your finger is covering the lens",
+				"you": true
+			}, {
+				"text": "oops! can you see it now?"
+			}, {
+				"image": "http://i.imgur.com/EanNVoQ.png"
+			}, {
+				"text": "looks great mom",
+				"you": true
+			}
+		]
+	}, {
+		"name": "different views",
+		"user": {
+			"name": "Jacob",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/aaronbeashel/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "hey i have to tell you something"
+			}, {
+				"text": "hey I do too",
+				"you": true
+			}, {
+				"text": "ok, let's say it at the same time"
+			}, {
+				"text": "ok.. 1.2.3.",
+				"you": true
+			}, {
+				"text": "can we break up?"
+			}, {
+				"text": "will you marry me?",
+				"you": true
+			}
+		]
+	}, {
+		"name": "dumpsville",
+		"user": {
+			"name": "Chris",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/horaciobella/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "babe welcome to Dumpsville... population: YOU."
+			}
+		]
+	}, {
+		"name": "duck your sister",
+		"user": {
+			"name": "Greg",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/joostvanderree/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "knock knock"
+			}, {
+				"text": "who's there?",
+				"you": true
+			}, {
+				"text": "your boyfriend ducked"
+			}, {
+				"text": "ducked who",
+				"you": true
+			}, {
+				"text": "your sister."
+			}, {
+				"text": "FUCKED*** sorry. really need a new phone."
+			}
+		]
+	}, {
+		"name": "funny how",
+		"user": {
+			"name": "Josh",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/davitferreira/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "you're funny :)"
+			}, {
+				"text": "I like that"
+			}, {
+				"text": "You mean... let me understand this cause, ya know maybe it's me, I'm a little fucked up maybe, but I'm funny how? I mean funny like a clown, I amuse you? What do you mean funny, funny how? How am I funny?",
+				"you": true
+			}
+		]
+	}, {
+		"name": "dont contact my daughter",
+		"user": {
+			"name": "Momina",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/ghaidazahran/128.jpg"
+		},
+		"messages": [
+			{
+				"image": "http://i.imgur.com/oJMdmam.png",
+				"you": true
+			}, {
+				"text": "hey beautiful :**",
+				"you": true
+			}, {
+				"image": "http://i.imgur.com/P909eI4.png"
+			}, {
+				"text": "Momina doesn't have her phone right now, I hope this is what you were expecting. Do not contact her again."
+			}
+		]
+	}, {
+		"name": "from 1 to america",
+		"user": {
+			"name": "Jillian",
+			"status": "online now",
+			"image": "https://s3.amazonaws.com/uifaces/faces/twitter/andrea211087/128.jpg"
+		},
+		"messages": [
+			{
+				"text": "from 1 to america, how free are you tonight?",
+				"you": true
+			}, {
+				"text": "I'm america. I'm only free for the very attractive and very wealthy."
 			}
 		]
 	}
