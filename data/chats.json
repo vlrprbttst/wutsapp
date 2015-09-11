@@ -1159,20 +1159,20 @@
 		},
 		"messages": [
 			{
-				"text": "OMG, guess what Eric just told me!"
-			}, {
-				"text": "wat?",
+				"text": "OMG, guess what Eric just told me!",
 				"you": true
 			}, {
-				"text": "he's gay!! but dont let on I told you. he said not to tell anyone yet."
+				"text": "wat?"
 			}, {
-				"text": "i already knew",
+				"text": "he's gay!! but dont let on I told you. he said not to tell anyone yet.",
 				"you": true
 			}, {
-				"text": "You did?"
+				"text": "i already knew"
 			}, {
-				"text": "yeah check the name bitch",
+				"text": "You did?",
 				"you": true
+			}, {
+				"text": "yeah check the name bitch"
 			}
 		]
 	}, {
